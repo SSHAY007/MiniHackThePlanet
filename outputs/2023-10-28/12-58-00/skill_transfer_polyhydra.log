@@ -1,0 +1,565 @@
+[2023-10-28 12:58:00,363][root][INFO] - name: null
+wandb: true
+project: MiniHackQuestHard
+entity: teamshayshay
+group: default
+state_dict_path: none
+foc_options_path:
+- /workspace/skill_transfer_weights/mini_skill_pick_up.tar
+- /workspace/skill_transfer_weights/mini_skill_fight.tar
+- /workspace/skill_transfer_weights/mini_skill_nav_blind.tar
+- /workspace/skill_transfer_weights/mini_skill_nav_lava.tar
+foc_options_config_path:
+- /workspace/skill_transfer_weights/skill_config.yaml
+- /workspace/skill_transfer_weights/skill_config.yaml
+- /workspace/skill_transfer_weights/skill_config.yaml
+- /workspace/skill_transfer_weights/skill_config.yaml
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.05
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 20
+hks_min_uniform_prop: 0
+hks_max_uniform_time: 200000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: quest_easy
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 100000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: hks
+use_lstm: true
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-28 12:58:00,382][root][INFO] - Symlinked log directory: /workspace/latest
+[2023-10-28 12:58:00,383][root][INFO] - Creating archive directory: /workspace/outputs/2023-10-28/12-58-00/archives
+[2023-10-28 12:58:05,066][root][INFO] - Logging results to /workspace/outputs/2023-10-28/12-58-00
+[2023-10-28 12:58:05,094][palaas/out][INFO] - Found log directory: /workspace/outputs/2023-10-28/12-58-00
+[2023-10-28 12:58:05,095][palaas/out][INFO] - Saving arguments to /workspace/outputs/2023-10-28/12-58-00/meta.json
+[2023-10-28 12:58:05,095][palaas/out][INFO] - Saving messages to /workspace/outputs/2023-10-28/12-58-00/out.log
+[2023-10-28 12:58:05,096][palaas/out][INFO] - Saving logs data to /workspace/outputs/2023-10-28/12-58-00/logs.csv
+[2023-10-28 12:58:05,096][palaas/out][INFO] - Saving logs' fields to /workspace/outputs/2023-10-28/12-58-00/fields.csv
+[2023-10-28 12:58:05,096][root][INFO] - Not using CUDA.
+[2023-10-28 12:58:05,102][root][INFO] - Using model hks
+[2023-10-28 12:58:05,131][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_pick_up.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,131][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_fight.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,131][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_blind.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,131][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_lava.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,316][root][INFO] - Number of model parameters: 4244546
+[2023-10-28 12:58:05,339][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_pick_up.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,340][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_fight.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,340][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_blind.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,340][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_lava.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:58:05,795][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,795][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,795][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,795][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,798][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,798][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,799][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,800][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,800][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,801][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,801][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,802][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,806][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,806][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,808][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,812][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,818][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,821][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,821][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,817][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,828][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,845][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,846][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,848][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,851][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,850][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,851][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,851][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,851][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,845][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,851][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,844][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,852][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,853][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,854][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,854][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,850][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,857][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,860][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,865][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,857][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,868][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,892][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,894][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,901][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,905][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,905][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,920][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,923][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,940][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,941][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,987][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,988][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,990][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,990][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,992][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,985][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,995][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,995][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:05,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,013][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,014][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,015][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,015][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,015][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,020][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,022][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,024][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,024][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,033][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,033][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,035][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,037][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,043][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,043][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,051][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,053][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,053][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,061][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,064][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,073][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,074][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,076][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,089][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,089][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,093][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,093][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,105][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,105][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,108][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,108][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,108][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,112][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,116][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,120][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,125][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,125][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,129][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,132][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,153][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,153][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,155][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,153][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,157][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,160][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,164][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,168][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,168][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,172][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,172][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,182][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,200][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,216][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,220][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,232][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,233][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,241][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,245][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,245][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,247][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,248][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,248][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,248][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,249][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,251][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,249][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,253][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,253][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,257][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,261][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,262][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,265][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,265][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,267][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,268][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,269][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,270][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,272][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,272][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,273][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,267][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,246][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,271][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,275][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,275][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,276][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,277][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,277][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,280][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,280][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,280][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,285][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,309][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,313][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,316][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,321][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,321][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,321][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,324][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,324][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,329][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,329][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,332][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,333][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,337][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,345][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,349][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,352][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,352][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,352][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,354][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,343][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,341][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,361][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,364][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,364][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,369][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,372][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,377][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,381][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,385][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,385][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,389][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,389][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,392][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,397][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,401][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,405][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,415][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,423][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,428][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,433][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,436][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,437][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,440][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,440][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,440][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,444][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,445][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,457][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,461][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,465][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,469][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,443][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:06,497][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:58:10,796][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 100. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-28 12:58:15,803][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 128. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-28 12:58:20,808][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 151. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-28 12:58:25,813][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 128. Learner queue size: 0. Other stats: (train_seconds = 20.0)
+[2023-10-28 12:58:30,820][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 118. Learner queue size: 0. Other stats: (train_seconds = 25.0)
+[2023-10-28 12:58:35,823][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 72. Learner queue size: 0. Other stats: (train_seconds = 30.0)
+[2023-10-28 12:58:40,828][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 84. Learner queue size: 0. Other stats: (train_seconds = 35.0)
+[2023-10-28 12:58:45,836][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 122. Learner queue size: 0. Other stats: (train_seconds = 40.0)
+[2023-10-28 12:58:50,841][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 131. Learner queue size: 0. Other stats: (train_seconds = 45.1)
+[2023-10-28 12:58:55,843][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 69. Learner queue size: 0. Other stats: (train_seconds = 50.1)
+[2023-10-28 12:59:00,847][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 91. Learner queue size: 0. Other stats: (train_seconds = 55.1)
+[2023-10-28 12:59:05,852][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 64. Learner queue size: 0. Other stats: (train_seconds = 60.1)
+[2023-10-28 12:59:10,855][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 90. Learner queue size: 0. Other stats: (train_seconds = 65.1)
+[2023-10-28 12:59:15,860][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 143. Learner queue size: 0. Other stats: (train_seconds = 70.1)
+[2023-10-28 12:59:20,868][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 85. Learner queue size: 4. Other stats: (train_seconds = 75.1)
+[2023-10-28 12:59:25,872][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 52. Learner queue size: 4. Other stats: (train_seconds = 80.1)
+[2023-10-28 12:59:30,877][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 113. Learner queue size: 25. Other stats: (train_seconds = 85.1)
+[2023-10-28 12:59:35,879][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 41. Learner queue size: 32. Other stats: (train_seconds = 90.1)
+[2023-10-28 12:59:40,884][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 15. Learner queue size: 32. Other stats: (train_seconds = 95.1)
+[2023-10-28 12:59:45,891][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 4. Learner queue size: 32. Other stats: (train_seconds = 100.1)
+[2023-10-28 12:59:50,896][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 20. Learner queue size: 32. Other stats: (train_seconds = 105.1)
+[2023-10-28 12:59:50,958][palaas/out][INFO] - Updated log fields: ['_tick', '_time', 'train_seconds', 'success_rate', 'meta_entropy', 'hks_loss', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']
+[2023-10-28 12:59:55,899][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-58-00/quest_easy_0.tar
+[2023-10-28 12:59:55,973][root][INFO] - Step 2560 @ 511.6 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 110.1, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.4027, step = 2560, mean_episode_return = -0.0057619, mean_episode_step = 16.939, total_loss = -298.68, entropy_loss = -4.12, pg_loss = -306.88, baseline_loss = 10.848, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 13:00:00,985][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 115.2, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.4027, step = 2560, mean_episode_return = -0.0057619, mean_episode_step = 16.939, total_loss = -298.68, entropy_loss = -4.12, pg_loss = -306.88, baseline_loss = 10.848, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 13:00:05,993][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 120.2, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.4027, step = 2560, mean_episode_return = -0.0057619, mean_episode_step = 16.939, total_loss = -298.68, entropy_loss = -4.12, pg_loss = -306.88, baseline_loss = 10.848, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 13:00:11,031][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 14. Learner queue size: 32. Other stats: (train_seconds = 125.2, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.4027, step = 2560, mean_episode_return = -0.0057619, mean_episode_step = 16.939, total_loss = -298.68, entropy_loss = -4.12, pg_loss = -306.88, baseline_loss = 10.848, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 13:00:16,037][root][INFO] - Step 5120 @ 508.3 SPS. Inference batcher size: 31. Learner queue size: 32. Other stats: (train_seconds = 130.2, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.36233, step = 5120, mean_episode_return = -0.0054578, mean_episode_step = 17.601, total_loss = 887.12, entropy_loss = -4.1044, pg_loss = 814.79, baseline_loss = 75.142, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 13:00:21,046][root][INFO] - Step 5120 @ 0.0 SPS. Inference batcher size: 91. Learner queue size: 32. Other stats: (train_seconds = 135.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.36233, step = 5120, mean_episode_return = -0.0054578, mean_episode_step = 17.601, total_loss = 887.12, entropy_loss = -4.1044, pg_loss = 814.79, baseline_loss = 75.142, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 13:00:26,054][root][INFO] - Step 5120 @ 0.0 SPS. Inference batcher size: 13. Learner queue size: 32. Other stats: (train_seconds = 140.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.36233, step = 5120, mean_episode_return = -0.0054578, mean_episode_step = 17.601, total_loss = 887.12, entropy_loss = -4.1044, pg_loss = 814.79, baseline_loss = 75.142, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 13:00:31,061][root][INFO] - Step 5120 @ 0.0 SPS. Inference batcher size: 29. Learner queue size: 32. Other stats: (train_seconds = 145.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.36233, step = 5120, mean_episode_return = -0.0054578, mean_episode_step = 17.601, total_loss = 887.12, entropy_loss = -4.1044, pg_loss = 814.79, baseline_loss = 75.142, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 13:00:36,069][root][INFO] - Step 7680 @ 511.2 SPS. Inference batcher size: 52. Learner queue size: 32. Other stats: (train_seconds = 150.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.46406, step = 7680, mean_episode_return = -0.0042674, mean_episode_step = 17.319, total_loss = -92.37, entropy_loss = -4.1142, pg_loss = -95.324, baseline_loss = 6.1839, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 13:00:41,077][root][INFO] - Step 7680 @ 0.0 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 155.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.46406, step = 7680, mean_episode_return = -0.0042674, mean_episode_step = 17.319, total_loss = -92.37, entropy_loss = -4.1142, pg_loss = -95.324, baseline_loss = 6.1839, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 13:00:46,082][root][INFO] - Step 7680 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 160.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.46406, step = 7680, mean_episode_return = -0.0042674, mean_episode_step = 17.319, total_loss = -92.37, entropy_loss = -4.1142, pg_loss = -95.324, baseline_loss = 6.1839, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 13:00:51,088][root][INFO] - Step 7680 @ 0.0 SPS. Inference batcher size: 23. Learner queue size: 32. Other stats: (train_seconds = 165.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.46406, step = 7680, mean_episode_return = -0.0042674, mean_episode_step = 17.319, total_loss = -92.37, entropy_loss = -4.1142, pg_loss = -95.324, baseline_loss = 6.1839, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 13:00:56,093][root][INFO] - Step 10240 @ 511.6 SPS. Inference batcher size: 19. Learner queue size: 32. Other stats: (train_seconds = 170.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 10.296, step = 10240, mean_episode_return = -0.0051978, mean_episode_step = 14.978, total_loss = 370.03, entropy_loss = -3.9252, pg_loss = 315.35, baseline_loss = 32.313, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 13:01:01,097][root][INFO] - Step 10240 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 175.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 10.296, step = 10240, mean_episode_return = -0.0051978, mean_episode_step = 14.978, total_loss = 370.03, entropy_loss = -3.9252, pg_loss = 315.35, baseline_loss = 32.313, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 13:01:06,106][root][INFO] - Step 10240 @ 0.0 SPS. Inference batcher size: 12. Learner queue size: 32. Other stats: (train_seconds = 180.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 10.296, step = 10240, mean_episode_return = -0.0051978, mean_episode_step = 14.978, total_loss = 370.03, entropy_loss = -3.9252, pg_loss = 315.35, baseline_loss = 32.313, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 13:01:11,114][root][INFO] - Step 10240 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 185.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 10.296, step = 10240, mean_episode_return = -0.0051978, mean_episode_step = 14.978, total_loss = 370.03, entropy_loss = -3.9252, pg_loss = 315.35, baseline_loss = 32.313, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 13:01:16,122][root][INFO] - Step 12800 @ 511.2 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 190.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.19169, step = 12800, mean_episode_return = -0.0049684, mean_episode_step = 16.464, total_loss = -204.98, entropy_loss = -4.0544, pg_loss = -209.42, baseline_loss = 2.8083, learner_queue_size = 32, _tick = 4, _time = 1.6985e+09)
+[2023-10-28 13:01:21,130][root][INFO] - Step 12800 @ 0.0 SPS. Inference batcher size: 54. Learner queue size: 32. Other stats: (train_seconds = 195.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.19169, step = 12800, mean_episode_return = -0.0049684, mean_episode_step = 16.464, total_loss = -204.98, entropy_loss = -4.0544, pg_loss = -209.42, baseline_loss = 2.8083, learner_queue_size = 32, _tick = 4, _time = 1.6985e+09)
+[2023-10-28 13:01:26,138][root][INFO] - Step 12800 @ 0.0 SPS. Inference batcher size: 13. Learner queue size: 32. Other stats: (train_seconds = 200.3, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.19169, step = 12800, mean_episode_return = -0.0049684, mean_episode_step = 16.464, total_loss = -204.98, entropy_loss = -4.0544, pg_loss = -209.42, baseline_loss = 2.8083, learner_queue_size = 32, _tick = 4, _time = 1.6985e+09)
+[2023-10-28 13:01:31,154][root][INFO] - Step 12800 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 205.4, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.19169, step = 12800, mean_episode_return = -0.0049684, mean_episode_step = 16.464, total_loss = -204.98, entropy_loss = -4.0544, pg_loss = -209.42, baseline_loss = 2.8083, learner_queue_size = 32, _tick = 4, _time = 1.6985e+09)
+[2023-10-28 13:01:36,163][root][INFO] - Step 15360 @ 511.1 SPS. Inference batcher size: 15. Learner queue size: 32. Other stats: (train_seconds = 210.4, success_rate = 0.0, meta_entropy = tensor(1.3851), hks_loss = 0.18309, step = 15360, mean_episode_return = -0.0053, mean_episode_step = 17.268, total_loss = 287.05, entropy_loss = -4.1125, pg_loss = 275.98, baseline_loss = 14.449, learner_queue_size = 32, _tick = 5, _time = 1.6985e+09)
+[2023-10-28 13:01:41,170][root][INFO] - Step 15360 @ 0.0 SPS. Inference batcher size: 4. Learner queue size: 32. Other stats: (train_seconds = 215.4, success_rate = 0.0, meta_entropy = tensor(1.3851), hks_loss = 0.18309, step = 15360, mean_episode_return = -0.0053, mean_episode_step = 17.268, total_loss = 287.05, entropy_loss = -4.1125, pg_loss = 275.98, baseline_loss = 14.449, learner_queue_size = 32, _tick = 5, _time = 1.6985e+09)
+[2023-10-28 13:01:46,181][root][INFO] - Step 15360 @ 0.0 SPS. Inference batcher size: 44. Learner queue size: 32. Other stats: (train_seconds = 220.4, success_rate = 0.0, meta_entropy = tensor(1.3851), hks_loss = 0.18309, step = 15360, mean_episode_return = -0.0053, mean_episode_step = 17.268, total_loss = 287.05, entropy_loss = -4.1125, pg_loss = 275.98, baseline_loss = 14.449, learner_queue_size = 32, _tick = 5, _time = 1.6985e+09)
+[2023-10-28 13:01:51,190][root][INFO] - Step 15360 @ 0.0 SPS. Inference batcher size: 28. Learner queue size: 32. Other stats: (train_seconds = 225.4, success_rate = 0.0, meta_entropy = tensor(1.3851), hks_loss = 0.18309, step = 15360, mean_episode_return = -0.0053, mean_episode_step = 17.268, total_loss = 287.05, entropy_loss = -4.1125, pg_loss = 275.98, baseline_loss = 14.449, learner_queue_size = 32, _tick = 5, _time = 1.6985e+09)
+[2023-10-28 13:01:56,214][root][INFO] - Step 17920 @ 511.2 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 230.4, success_rate = 0.0, meta_entropy = tensor(1.3844), hks_loss = 0.28784, step = 17920, mean_episode_return = -0.0043423, mean_episode_step = 16.059, total_loss = 15.388, entropy_loss = -4.0967, pg_loss = 15.125, baseline_loss = 2.6007, learner_queue_size = 32, _tick = 6, _time = 1.6985e+09)
+[2023-10-28 13:02:01,226][root][INFO] - Step 17920 @ 0.0 SPS. Inference batcher size: 16. Learner queue size: 32. Other stats: (train_seconds = 235.4, success_rate = 0.0, meta_entropy = tensor(1.3844), hks_loss = 0.28784, step = 17920, mean_episode_return = -0.0043423, mean_episode_step = 16.059, total_loss = 15.388, entropy_loss = -4.0967, pg_loss = 15.125, baseline_loss = 2.6007, learner_queue_size = 32, _tick = 6, _time = 1.6985e+09)
+[2023-10-28 13:02:06,233][root][INFO] - Step 17920 @ 0.0 SPS. Inference batcher size: 14. Learner queue size: 32. Other stats: (train_seconds = 240.4, success_rate = 0.0, meta_entropy = tensor(1.3844), hks_loss = 0.28784, step = 17920, mean_episode_return = -0.0043423, mean_episode_step = 16.059, total_loss = 15.388, entropy_loss = -4.0967, pg_loss = 15.125, baseline_loss = 2.6007, learner_queue_size = 32, _tick = 6, _time = 1.6985e+09)
+[2023-10-28 13:02:11,241][root][INFO] - Step 17920 @ 0.0 SPS. Inference batcher size: 20. Learner queue size: 32. Other stats: (train_seconds = 245.4, success_rate = 0.0, meta_entropy = tensor(1.3844), hks_loss = 0.28784, step = 17920, mean_episode_return = -0.0043423, mean_episode_step = 16.059, total_loss = 15.388, entropy_loss = -4.0967, pg_loss = 15.125, baseline_loss = 2.6007, learner_queue_size = 32, _tick = 6, _time = 1.6985e+09)
+[2023-10-28 13:02:16,249][root][INFO] - Step 20480 @ 511.2 SPS. Inference batcher size: 25. Learner queue size: 32. Other stats: (train_seconds = 250.5, success_rate = 0.0, meta_entropy = tensor(1.3842), hks_loss = 5.3789, step = 20480, mean_episode_return = -0.0057308, mean_episode_step = 19.479, total_loss = -16.777, entropy_loss = -3.661, pg_loss = -64.049, baseline_loss = 0.76071, learner_queue_size = 32, _tick = 7, _time = 1.6985e+09)
+[2023-10-28 13:02:21,258][root][INFO] - Step 20480 @ 0.0 SPS. Inference batcher size: 12. Learner queue size: 32. Other stats: (train_seconds = 255.5, success_rate = 0.0, meta_entropy = tensor(1.3842), hks_loss = 5.3789, step = 20480, mean_episode_return = -0.0057308, mean_episode_step = 19.479, total_loss = -16.777, entropy_loss = -3.661, pg_loss = -64.049, baseline_loss = 0.76071, learner_queue_size = 32, _tick = 7, _time = 1.6985e+09)
+[2023-10-28 13:02:26,265][root][INFO] - Step 20480 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 260.5, success_rate = 0.0, meta_entropy = tensor(1.3842), hks_loss = 5.3789, step = 20480, mean_episode_return = -0.0057308, mean_episode_step = 19.479, total_loss = -16.777, entropy_loss = -3.661, pg_loss = -64.049, baseline_loss = 0.76071, learner_queue_size = 32, _tick = 7, _time = 1.6985e+09)
+[2023-10-28 13:02:31,274][root][INFO] - Step 20480 @ 0.0 SPS. Inference batcher size: 32. Learner queue size: 32. Other stats: (train_seconds = 265.5, success_rate = 0.0, meta_entropy = tensor(1.3842), hks_loss = 5.3789, step = 20480, mean_episode_return = -0.0057308, mean_episode_step = 19.479, total_loss = -16.777, entropy_loss = -3.661, pg_loss = -64.049, baseline_loss = 0.76071, learner_queue_size = 32, _tick = 7, _time = 1.6985e+09)
+[2023-10-28 13:02:36,281][root][INFO] - Step 23040 @ 511.2 SPS. Inference batcher size: 90. Learner queue size: 32. Other stats: (train_seconds = 270.5, success_rate = 0.0, meta_entropy = tensor(1.3841), hks_loss = 1.3554, step = 23040, mean_episode_return = -0.004256, mean_episode_step = 15.033, total_loss = 44.239, entropy_loss = -4.0527, pg_loss = 39.942, baseline_loss = 2.2651, learner_queue_size = 32, _tick = 8, _time = 1.6985e+09)
+[2023-10-28 13:02:41,289][root][INFO] - Step 23040 @ 0.0 SPS. Inference batcher size: 2. Learner queue size: 32. Other stats: (train_seconds = 275.5, success_rate = 0.0, meta_entropy = tensor(1.3841), hks_loss = 1.3554, step = 23040, mean_episode_return = -0.004256, mean_episode_step = 15.033, total_loss = 44.239, entropy_loss = -4.0527, pg_loss = 39.942, baseline_loss = 2.2651, learner_queue_size = 32, _tick = 8, _time = 1.6985e+09)
+[2023-10-28 13:02:46,299][root][INFO] - Step 23040 @ 0.0 SPS. Inference batcher size: 26. Learner queue size: 32. Other stats: (train_seconds = 280.5, success_rate = 0.0, meta_entropy = tensor(1.3841), hks_loss = 1.3554, step = 23040, mean_episode_return = -0.004256, mean_episode_step = 15.033, total_loss = 44.239, entropy_loss = -4.0527, pg_loss = 39.942, baseline_loss = 2.2651, learner_queue_size = 32, _tick = 8, _time = 1.6985e+09)
+[2023-10-28 13:02:51,305][root][INFO] - Step 23040 @ 0.0 SPS. Inference batcher size: 34. Learner queue size: 32. Other stats: (train_seconds = 285.5, success_rate = 0.0, meta_entropy = tensor(1.3841), hks_loss = 1.3554, step = 23040, mean_episode_return = -0.004256, mean_episode_step = 15.033, total_loss = 44.239, entropy_loss = -4.0527, pg_loss = 39.942, baseline_loss = 2.2651, learner_queue_size = 32, _tick = 8, _time = 1.6985e+09)
+[2023-10-28 13:02:56,318][root][INFO] - Step 23040 @ 0.0 SPS. Inference batcher size: 58. Learner queue size: 32. Other stats: (train_seconds = 290.5, success_rate = 0.0, meta_entropy = tensor(1.3841), hks_loss = 1.3554, step = 23040, mean_episode_return = -0.004256, mean_episode_step = 15.033, total_loss = 44.239, entropy_loss = -4.0527, pg_loss = 39.942, baseline_loss = 2.2651, learner_queue_size = 32, _tick = 8, _time = 1.6985e+09)
+[2023-10-28 13:03:01,323][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-58-00/quest_easy_0.25.tar
+[2023-10-28 13:03:01,355][root][INFO] - Step 25600 @ 510.8 SPS. Inference batcher size: 50. Learner queue size: 32. Other stats: (train_seconds = 295.5, success_rate = 0.0, meta_entropy = tensor(1.3843), hks_loss = 0.7117, step = 25600, mean_episode_return = -0.004693, mean_episode_step = 15.568, total_loss = -185.55, entropy_loss = -4.1076, pg_loss = -185.45, baseline_loss = 2.8472, learner_queue_size = 32, _tick = 9, _time = 1.6985e+09)
+[2023-10-28 13:03:06,362][root][INFO] - Step 25600 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 300.6, success_rate = 0.0, meta_entropy = tensor(1.3843), hks_loss = 0.7117, step = 25600, mean_episode_return = -0.004693, mean_episode_step = 15.568, total_loss = -185.55, entropy_loss = -4.1076, pg_loss = -185.45, baseline_loss = 2.8472, learner_queue_size = 32, _tick = 9, _time = 1.6985e+09)
+[2023-10-28 13:03:11,370][root][INFO] - Step 25600 @ 0.0 SPS. Inference batcher size: 45. Learner queue size: 32. Other stats: (train_seconds = 305.6, success_rate = 0.0, meta_entropy = tensor(1.3843), hks_loss = 0.7117, step = 25600, mean_episode_return = -0.004693, mean_episode_step = 15.568, total_loss = -185.55, entropy_loss = -4.1076, pg_loss = -185.45, baseline_loss = 2.8472, learner_queue_size = 32, _tick = 9, _time = 1.6985e+09)
+[2023-10-28 13:03:16,379][root][INFO] - Step 25600 @ 0.0 SPS. Inference batcher size: 74. Learner queue size: 32. Other stats: (train_seconds = 310.6, success_rate = 0.0, meta_entropy = tensor(1.3843), hks_loss = 0.7117, step = 25600, mean_episode_return = -0.004693, mean_episode_step = 15.568, total_loss = -185.55, entropy_loss = -4.1076, pg_loss = -185.45, baseline_loss = 2.8472, learner_queue_size = 32, _tick = 9, _time = 1.6985e+09)
+[2023-10-28 13:03:21,385][root][INFO] - Step 28160 @ 511.4 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 315.6, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.068399, step = 28160, mean_episode_return = -0.004561, mean_episode_step = 16.692, total_loss = -40.21, entropy_loss = -4.1154, pg_loss = -41.062, baseline_loss = 4.5642, learner_queue_size = 32, _tick = 10, _time = 1.6985e+09)
+[2023-10-28 13:03:26,394][root][INFO] - Step 28160 @ 0.0 SPS. Inference batcher size: 2. Learner queue size: 32. Other stats: (train_seconds = 320.6, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.068399, step = 28160, mean_episode_return = -0.004561, mean_episode_step = 16.692, total_loss = -40.21, entropy_loss = -4.1154, pg_loss = -41.062, baseline_loss = 4.5642, learner_queue_size = 32, _tick = 10, _time = 1.6985e+09)
+[2023-10-28 13:03:31,400][root][INFO] - Step 28160 @ 0.0 SPS. Inference batcher size: 12. Learner queue size: 32. Other stats: (train_seconds = 325.6, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.068399, step = 28160, mean_episode_return = -0.004561, mean_episode_step = 16.692, total_loss = -40.21, entropy_loss = -4.1154, pg_loss = -41.062, baseline_loss = 4.5642, learner_queue_size = 32, _tick = 10, _time = 1.6985e+09)
+[2023-10-28 13:03:36,438][root][INFO] - Step 28160 @ 0.0 SPS. Inference batcher size: 32. Learner queue size: 32. Other stats: (train_seconds = 330.6, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.068399, step = 28160, mean_episode_return = -0.004561, mean_episode_step = 16.692, total_loss = -40.21, entropy_loss = -4.1154, pg_loss = -41.062, baseline_loss = 4.5642, learner_queue_size = 32, _tick = 10, _time = 1.6985e+09)
+[2023-10-28 13:03:41,445][root][INFO] - Step 30720 @ 507.9 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 335.7, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.13748, step = 30720, mean_episode_return = -0.0048083, mean_episode_step = 18.183, total_loss = 125.53, entropy_loss = -4.0769, pg_loss = 121.78, baseline_loss = 5.2272, learner_queue_size = 32, _tick = 11, _time = 1.6985e+09)
+[2023-10-28 13:03:46,454][root][INFO] - Step 30720 @ 0.0 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 340.7, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.13748, step = 30720, mean_episode_return = -0.0048083, mean_episode_step = 18.183, total_loss = 125.53, entropy_loss = -4.0769, pg_loss = 121.78, baseline_loss = 5.2272, learner_queue_size = 32, _tick = 11, _time = 1.6985e+09)
+[2023-10-28 13:03:51,462][root][INFO] - Step 30720 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 345.7, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.13748, step = 30720, mean_episode_return = -0.0048083, mean_episode_step = 18.183, total_loss = 125.53, entropy_loss = -4.0769, pg_loss = 121.78, baseline_loss = 5.2272, learner_queue_size = 32, _tick = 11, _time = 1.6985e+09)
+[2023-10-28 13:03:56,470][root][INFO] - Step 30720 @ 0.0 SPS. Inference batcher size: 28. Learner queue size: 32. Other stats: (train_seconds = 350.7, success_rate = 0.0, meta_entropy = tensor(1.3838), hks_loss = 0.13748, step = 30720, mean_episode_return = -0.0048083, mean_episode_step = 18.183, total_loss = 125.53, entropy_loss = -4.0769, pg_loss = 121.78, baseline_loss = 5.2272, learner_queue_size = 32, _tick = 11, _time = 1.6985e+09)
+[2023-10-28 13:04:01,482][root][INFO] - Step 33280 @ 510.8 SPS. Inference batcher size: 36. Learner queue size: 32. Other stats: (train_seconds = 355.7, success_rate = 0.0, meta_entropy = tensor(1.3835), hks_loss = 0.074366, step = 33280, mean_episode_return = -0.0044574, mean_episode_step = 16.926, total_loss = -137.0, entropy_loss = -4.0918, pg_loss = -136.48, baseline_loss = 2.06, learner_queue_size = 32, _tick = 12, _time = 1.6985e+09)
+[2023-10-28 13:04:06,489][root][INFO] - Step 33280 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 360.7, success_rate = 0.0, meta_entropy = tensor(1.3835), hks_loss = 0.074366, step = 33280, mean_episode_return = -0.0044574, mean_episode_step = 16.926, total_loss = -137.0, entropy_loss = -4.0918, pg_loss = -136.48, baseline_loss = 2.06, learner_queue_size = 32, _tick = 12, _time = 1.6985e+09)
+[2023-10-28 13:04:11,495][root][INFO] - Step 33280 @ 0.0 SPS. Inference batcher size: 16. Learner queue size: 32. Other stats: (train_seconds = 365.7, success_rate = 0.0, meta_entropy = tensor(1.3835), hks_loss = 0.074366, step = 33280, mean_episode_return = -0.0044574, mean_episode_step = 16.926, total_loss = -137.0, entropy_loss = -4.0918, pg_loss = -136.48, baseline_loss = 2.06, learner_queue_size = 32, _tick = 12, _time = 1.6985e+09)
+[2023-10-28 13:04:16,502][root][INFO] - Step 33280 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 370.7, success_rate = 0.0, meta_entropy = tensor(1.3835), hks_loss = 0.074366, step = 33280, mean_episode_return = -0.0044574, mean_episode_step = 16.926, total_loss = -137.0, entropy_loss = -4.0918, pg_loss = -136.48, baseline_loss = 2.06, learner_queue_size = 32, _tick = 12, _time = 1.6985e+09)
+[2023-10-28 13:04:21,509][root][INFO] - Step 35840 @ 511.2 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 375.7, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.016245, step = 35840, mean_episode_return = -0.0035616, mean_episode_step = 15.831, total_loss = 56.794, entropy_loss = -4.0994, pg_loss = 55.743, baseline_loss = 4.2223, learner_queue_size = 32, _tick = 13, _time = 1.6985e+09)
+[2023-10-28 13:04:26,519][root][INFO] - Step 35840 @ 0.0 SPS. Inference batcher size: 23. Learner queue size: 32. Other stats: (train_seconds = 380.7, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.016245, step = 35840, mean_episode_return = -0.0035616, mean_episode_step = 15.831, total_loss = 56.794, entropy_loss = -4.0994, pg_loss = 55.743, baseline_loss = 4.2223, learner_queue_size = 32, _tick = 13, _time = 1.6985e+09)
+[2023-10-28 13:04:31,530][root][INFO] - Step 35840 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 385.7, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.016245, step = 35840, mean_episode_return = -0.0035616, mean_episode_step = 15.831, total_loss = 56.794, entropy_loss = -4.0994, pg_loss = 55.743, baseline_loss = 4.2223, learner_queue_size = 32, _tick = 13, _time = 1.6985e+09)
+[2023-10-28 13:04:36,538][root][INFO] - Step 35840 @ 0.0 SPS. Inference batcher size: 22. Learner queue size: 32. Other stats: (train_seconds = 390.7, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.016245, step = 35840, mean_episode_return = -0.0035616, mean_episode_step = 15.831, total_loss = 56.794, entropy_loss = -4.0994, pg_loss = 55.743, baseline_loss = 4.2223, learner_queue_size = 32, _tick = 13, _time = 1.6985e+09)
+[2023-10-28 13:04:41,550][root][INFO] - Step 38400 @ 510.9 SPS. Inference batcher size: 45. Learner queue size: 32. Other stats: (train_seconds = 395.8, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.021212, step = 38400, mean_episode_return = -0.0032238, mean_episode_step = 13.154, total_loss = 2.4739, entropy_loss = -4.0599, pg_loss = 1.3354, baseline_loss = 1.3627, learner_queue_size = 32, _tick = 14, _time = 1.6985e+09)
+[2023-10-28 13:04:46,556][root][INFO] - Step 38400 @ 0.0 SPS. Inference batcher size: 35. Learner queue size: 32. Other stats: (train_seconds = 400.8, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.021212, step = 38400, mean_episode_return = -0.0032238, mean_episode_step = 13.154, total_loss = 2.4739, entropy_loss = -4.0599, pg_loss = 1.3354, baseline_loss = 1.3627, learner_queue_size = 32, _tick = 14, _time = 1.6985e+09)
+[2023-10-28 13:04:51,562][root][INFO] - Step 38400 @ 0.0 SPS. Inference batcher size: 28. Learner queue size: 32. Other stats: (train_seconds = 405.8, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.021212, step = 38400, mean_episode_return = -0.0032238, mean_episode_step = 13.154, total_loss = 2.4739, entropy_loss = -4.0599, pg_loss = 1.3354, baseline_loss = 1.3627, learner_queue_size = 32, _tick = 14, _time = 1.6985e+09)
+[2023-10-28 13:04:56,570][root][INFO] - Step 38400 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 410.8, success_rate = 0.0, meta_entropy = tensor(1.3839), hks_loss = 0.021212, step = 38400, mean_episode_return = -0.0032238, mean_episode_step = 13.154, total_loss = 2.4739, entropy_loss = -4.0599, pg_loss = 1.3354, baseline_loss = 1.3627, learner_queue_size = 32, _tick = 14, _time = 1.6985e+09)
+[2023-10-28 13:05:01,576][root][INFO] - Step 40960 @ 511.2 SPS. Inference batcher size: 82. Learner queue size: 32. Other stats: (train_seconds = 415.8, success_rate = 0.0, meta_entropy = tensor(1.3845), hks_loss = 0.042387, step = 40960, mean_episode_return = -0.0035878, mean_episode_step = 14.586, total_loss = -51.994, entropy_loss = -4.0943, pg_loss = -51.565, baseline_loss = 2.4999, learner_queue_size = 32, _tick = 15, _time = 1.6985e+09)
+[2023-10-28 13:05:06,581][root][INFO] - Step 40960 @ 0.0 SPS. Inference batcher size: 52. Learner queue size: 32. Other stats: (train_seconds = 420.8, success_rate = 0.0, meta_entropy = tensor(1.3845), hks_loss = 0.042387, step = 40960, mean_episode_return = -0.0035878, mean_episode_step = 14.586, total_loss = -51.994, entropy_loss = -4.0943, pg_loss = -51.565, baseline_loss = 2.4999, learner_queue_size = 32, _tick = 15, _time = 1.6985e+09)
+[2023-10-28 13:05:11,592][root][INFO] - Step 40960 @ 0.0 SPS. Inference batcher size: 37. Learner queue size: 32. Other stats: (train_seconds = 425.8, success_rate = 0.0, meta_entropy = tensor(1.3845), hks_loss = 0.042387, step = 40960, mean_episode_return = -0.0035878, mean_episode_step = 14.586, total_loss = -51.994, entropy_loss = -4.0943, pg_loss = -51.565, baseline_loss = 2.4999, learner_queue_size = 32, _tick = 15, _time = 1.6985e+09)
+[2023-10-28 13:05:16,596][root][INFO] - Step 40960 @ 0.0 SPS. Inference batcher size: 45. Learner queue size: 32. Other stats: (train_seconds = 430.8, success_rate = 0.0, meta_entropy = tensor(1.3845), hks_loss = 0.042387, step = 40960, mean_episode_return = -0.0035878, mean_episode_step = 14.586, total_loss = -51.994, entropy_loss = -4.0943, pg_loss = -51.565, baseline_loss = 2.4999, learner_queue_size = 32, _tick = 15, _time = 1.6985e+09)
+[2023-10-28 13:05:21,601][root][INFO] - Step 40960 @ 0.0 SPS. Inference batcher size: 14. Learner queue size: 32. Other stats: (train_seconds = 435.8, success_rate = 0.0, meta_entropy = tensor(1.3845), hks_loss = 0.042387, step = 40960, mean_episode_return = -0.0035878, mean_episode_step = 14.586, total_loss = -51.994, entropy_loss = -4.0943, pg_loss = -51.565, baseline_loss = 2.4999, learner_queue_size = 32, _tick = 15, _time = 1.6985e+09)
+[2023-10-28 13:05:26,607][root][INFO] - Step 43520 @ 511.4 SPS. Inference batcher size: 6. Learner queue size: 32. Other stats: (train_seconds = 440.8, success_rate = 0.0, meta_entropy = tensor(1.3849), hks_loss = 0.023808, step = 43520, mean_episode_return = -0.003735, mean_episode_step = 15.672, total_loss = 24.215, entropy_loss = -4.0811, pg_loss = 23.768, baseline_loss = 2.5624, learner_queue_size = 32, _tick = 16, _time = 1.6985e+09)
+[2023-10-28 13:05:31,617][root][INFO] - Step 43520 @ 0.0 SPS. Inference batcher size: 16. Learner queue size: 32. Other stats: (train_seconds = 445.8, success_rate = 0.0, meta_entropy = tensor(1.3849), hks_loss = 0.023808, step = 43520, mean_episode_return = -0.003735, mean_episode_step = 15.672, total_loss = 24.215, entropy_loss = -4.0811, pg_loss = 23.768, baseline_loss = 2.5624, learner_queue_size = 32, _tick = 16, _time = 1.6985e+09)
+[2023-10-28 13:05:36,625][root][INFO] - Step 43520 @ 0.0 SPS. Inference batcher size: 3. Learner queue size: 32. Other stats: (train_seconds = 450.8, success_rate = 0.0, meta_entropy = tensor(1.3849), hks_loss = 0.023808, step = 43520, mean_episode_return = -0.003735, mean_episode_step = 15.672, total_loss = 24.215, entropy_loss = -4.0811, pg_loss = 23.768, baseline_loss = 2.5624, learner_queue_size = 32, _tick = 16, _time = 1.6985e+09)
+[2023-10-28 13:05:41,634][root][INFO] - Step 43520 @ 0.0 SPS. Inference batcher size: 22. Learner queue size: 32. Other stats: (train_seconds = 455.8, success_rate = 0.0, meta_entropy = tensor(1.3849), hks_loss = 0.023808, step = 43520, mean_episode_return = -0.003735, mean_episode_step = 15.672, total_loss = 24.215, entropy_loss = -4.0811, pg_loss = 23.768, baseline_loss = 2.5624, learner_queue_size = 32, _tick = 16, _time = 1.6985e+09)
+[2023-10-28 13:05:46,641][root][INFO] - Step 46080 @ 511.4 SPS. Inference batcher size: 41. Learner queue size: 32. Other stats: (train_seconds = 460.8, success_rate = 0.0, meta_entropy = tensor(1.3855), hks_loss = 0.0097244, step = 46080, mean_episode_return = -0.0038978, mean_episode_step = 15.306, total_loss = -54.841, entropy_loss = -4.0811, pg_loss = -55.558, baseline_loss = 2.9064, learner_queue_size = 32, _tick = 17, _time = 1.6985e+09)
+[2023-10-28 13:05:51,650][root][INFO] - Step 46080 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 465.9, success_rate = 0.0, meta_entropy = tensor(1.3855), hks_loss = 0.0097244, step = 46080, mean_episode_return = -0.0038978, mean_episode_step = 15.306, total_loss = -54.841, entropy_loss = -4.0811, pg_loss = -55.558, baseline_loss = 2.9064, learner_queue_size = 32, _tick = 17, _time = 1.6985e+09)
+[2023-10-28 13:05:56,656][root][INFO] - Step 46080 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 470.9, success_rate = 0.0, meta_entropy = tensor(1.3855), hks_loss = 0.0097244, step = 46080, mean_episode_return = -0.0038978, mean_episode_step = 15.306, total_loss = -54.841, entropy_loss = -4.0811, pg_loss = -55.558, baseline_loss = 2.9064, learner_queue_size = 32, _tick = 17, _time = 1.6985e+09)
+[2023-10-28 13:06:01,662][root][INFO] - Step 46080 @ 0.0 SPS. Inference batcher size: 18. Learner queue size: 32. Other stats: (train_seconds = 475.9, success_rate = 0.0, meta_entropy = tensor(1.3855), hks_loss = 0.0097244, step = 46080, mean_episode_return = -0.0038978, mean_episode_step = 15.306, total_loss = -54.841, entropy_loss = -4.0811, pg_loss = -55.558, baseline_loss = 2.9064, learner_queue_size = 32, _tick = 17, _time = 1.6985e+09)
+[2023-10-28 13:06:06,673][root][INFO] - Step 48640 @ 510.8 SPS. Inference batcher size: 39. Learner queue size: 32. Other stats: (train_seconds = 480.9, success_rate = 0.0, meta_entropy = tensor(1.3858), hks_loss = 0.029438, step = 48640, mean_episode_return = -0.003626, mean_episode_step = 17.105, total_loss = 37.783, entropy_loss = -4.0734, pg_loss = 35.606, baseline_loss = 3.6332, learner_queue_size = 32, _tick = 18, _time = 1.6985e+09)
+[2023-10-28 13:06:11,681][root][INFO] - Step 48640 @ 0.0 SPS. Inference batcher size: 66. Learner queue size: 32. Other stats: (train_seconds = 485.9, success_rate = 0.0, meta_entropy = tensor(1.3858), hks_loss = 0.029438, step = 48640, mean_episode_return = -0.003626, mean_episode_step = 17.105, total_loss = 37.783, entropy_loss = -4.0734, pg_loss = 35.606, baseline_loss = 3.6332, learner_queue_size = 32, _tick = 18, _time = 1.6985e+09)
+[2023-10-28 13:06:16,708][root][INFO] - Step 48640 @ 0.0 SPS. Inference batcher size: 13. Learner queue size: 32. Other stats: (train_seconds = 490.9, success_rate = 0.0, meta_entropy = tensor(1.3858), hks_loss = 0.029438, step = 48640, mean_episode_return = -0.003626, mean_episode_step = 17.105, total_loss = 37.783, entropy_loss = -4.0734, pg_loss = 35.606, baseline_loss = 3.6332, learner_queue_size = 32, _tick = 18, _time = 1.6985e+09)
+[2023-10-28 13:06:21,713][root][INFO] - Step 48640 @ 0.0 SPS. Inference batcher size: 33. Learner queue size: 32. Other stats: (train_seconds = 495.9, success_rate = 0.0, meta_entropy = tensor(1.3858), hks_loss = 0.029438, step = 48640, mean_episode_return = -0.003626, mean_episode_step = 17.105, total_loss = 37.783, entropy_loss = -4.0734, pg_loss = 35.606, baseline_loss = 3.6332, learner_queue_size = 32, _tick = 18, _time = 1.6985e+09)
+[2023-10-28 13:06:26,720][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-58-00/quest_easy_0.5.tar
+[2023-10-28 13:06:26,819][root][INFO] - Step 51200 @ 511.2 SPS. Inference batcher size: 14. Learner queue size: 32. Other stats: (train_seconds = 500.9, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017563, step = 51200, mean_episode_return = -0.0029078, mean_episode_step = 12.346, total_loss = -24.248, entropy_loss = -4.0566, pg_loss = -25.774, baseline_loss = 1.5802, learner_queue_size = 32, _tick = 19, _time = 1.6985e+09)
+[2023-10-28 13:06:31,827][root][INFO] - Step 51200 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 506.0, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017563, step = 51200, mean_episode_return = -0.0029078, mean_episode_step = 12.346, total_loss = -24.248, entropy_loss = -4.0566, pg_loss = -25.774, baseline_loss = 1.5802, learner_queue_size = 32, _tick = 19, _time = 1.6985e+09)
+[2023-10-28 13:06:36,836][root][INFO] - Step 51200 @ 0.0 SPS. Inference batcher size: 4. Learner queue size: 32. Other stats: (train_seconds = 511.0, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017563, step = 51200, mean_episode_return = -0.0029078, mean_episode_step = 12.346, total_loss = -24.248, entropy_loss = -4.0566, pg_loss = -25.774, baseline_loss = 1.5802, learner_queue_size = 32, _tick = 19, _time = 1.6985e+09)
+[2023-10-28 13:06:41,847][root][INFO] - Step 51200 @ 0.0 SPS. Inference batcher size: 62. Learner queue size: 32. Other stats: (train_seconds = 516.0, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017563, step = 51200, mean_episode_return = -0.0029078, mean_episode_step = 12.346, total_loss = -24.248, entropy_loss = -4.0566, pg_loss = -25.774, baseline_loss = 1.5802, learner_queue_size = 32, _tick = 19, _time = 1.6985e+09)
+[2023-10-28 13:06:46,853][root][INFO] - Step 53760 @ 510.9 SPS. Inference batcher size: 70. Learner queue size: 32. Other stats: (train_seconds = 521.1, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017919, step = 53760, mean_episode_return = -0.0035517, mean_episode_step = 14.437, total_loss = 2.6622, entropy_loss = -4.0884, pg_loss = 2.516, baseline_loss = 2.7127, learner_queue_size = 32, _tick = 20, _time = 1.6985e+09)
+[2023-10-28 13:06:51,858][root][INFO] - Step 53760 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 526.1, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017919, step = 53760, mean_episode_return = -0.0035517, mean_episode_step = 14.437, total_loss = 2.6622, entropy_loss = -4.0884, pg_loss = 2.516, baseline_loss = 2.7127, learner_queue_size = 32, _tick = 20, _time = 1.6985e+09)
+[2023-10-28 13:06:56,871][root][INFO] - Step 53760 @ 0.0 SPS. Inference batcher size: 21. Learner queue size: 32. Other stats: (train_seconds = 531.1, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017919, step = 53760, mean_episode_return = -0.0035517, mean_episode_step = 14.437, total_loss = 2.6622, entropy_loss = -4.0884, pg_loss = 2.516, baseline_loss = 2.7127, learner_queue_size = 32, _tick = 20, _time = 1.6985e+09)
+[2023-10-28 13:07:01,885][root][INFO] - Step 53760 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 536.1, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017919, step = 53760, mean_episode_return = -0.0035517, mean_episode_step = 14.437, total_loss = 2.6622, entropy_loss = -4.0884, pg_loss = 2.516, baseline_loss = 2.7127, learner_queue_size = 32, _tick = 20, _time = 1.6985e+09)
+[2023-10-28 13:07:06,889][root][INFO] - Step 53760 @ 0.0 SPS. Inference batcher size: 45. Learner queue size: 32. Other stats: (train_seconds = 541.1, success_rate = 0.0, meta_entropy = tensor(1.3857), hks_loss = 0.017919, step = 53760, mean_episode_return = -0.0035517, mean_episode_step = 14.437, total_loss = 2.6622, entropy_loss = -4.0884, pg_loss = 2.516, baseline_loss = 2.7127, learner_queue_size = 32, _tick = 20, _time = 1.6985e+09)
+[2023-10-28 13:07:11,898][root][INFO] - Step 56320 @ 511.2 SPS. Inference batcher size: 41. Learner queue size: 32. Other stats: (train_seconds = 546.1, success_rate = 0.0, meta_entropy = tensor(1.3861), hks_loss = 0.031681, step = 56320, mean_episode_return = -0.0030435, mean_episode_step = 13.804, total_loss = 19.089, entropy_loss = -4.0633, pg_loss = 17.673, baseline_loss = 2.153, learner_queue_size = 32, _tick = 21, _time = 1.6985e+09)
+[2023-10-28 13:07:16,914][root][INFO] - Step 56320 @ 0.0 SPS. Inference batcher size: 52. Learner queue size: 32. Other stats: (train_seconds = 551.1, success_rate = 0.0, meta_entropy = tensor(1.3861), hks_loss = 0.031681, step = 56320, mean_episode_return = -0.0030435, mean_episode_step = 13.804, total_loss = 19.089, entropy_loss = -4.0633, pg_loss = 17.673, baseline_loss = 2.153, learner_queue_size = 32, _tick = 21, _time = 1.6985e+09)
+[2023-10-28 13:07:21,924][root][INFO] - Step 56320 @ 0.0 SPS. Inference batcher size: 30. Learner queue size: 32. Other stats: (train_seconds = 556.1, success_rate = 0.0, meta_entropy = tensor(1.3861), hks_loss = 0.031681, step = 56320, mean_episode_return = -0.0030435, mean_episode_step = 13.804, total_loss = 19.089, entropy_loss = -4.0633, pg_loss = 17.673, baseline_loss = 2.153, learner_queue_size = 32, _tick = 21, _time = 1.6985e+09)
+[2023-10-28 13:07:26,930][root][INFO] - Step 56320 @ 0.0 SPS. Inference batcher size: 92. Learner queue size: 32. Other stats: (train_seconds = 561.1, success_rate = 0.0, meta_entropy = tensor(1.3861), hks_loss = 0.031681, step = 56320, mean_episode_return = -0.0030435, mean_episode_step = 13.804, total_loss = 19.089, entropy_loss = -4.0633, pg_loss = 17.673, baseline_loss = 2.153, learner_queue_size = 32, _tick = 21, _time = 1.6985e+09)
+[2023-10-28 13:07:31,939][root][INFO] - Step 58880 @ 511.2 SPS. Inference batcher size: 32. Learner queue size: 32. Other stats: (train_seconds = 566.1, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.017434, step = 58880, mean_episode_return = -0.0034274, mean_episode_step = 15.11, total_loss = -111.63, entropy_loss = -4.0794, pg_loss = -113.98, baseline_loss = 4.2765, learner_queue_size = 32, _tick = 22, _time = 1.6985e+09)
+[2023-10-28 13:07:36,949][root][INFO] - Step 58880 @ 0.0 SPS. Inference batcher size: 40. Learner queue size: 32. Other stats: (train_seconds = 571.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.017434, step = 58880, mean_episode_return = -0.0034274, mean_episode_step = 15.11, total_loss = -111.63, entropy_loss = -4.0794, pg_loss = -113.98, baseline_loss = 4.2765, learner_queue_size = 32, _tick = 22, _time = 1.6985e+09)
+[2023-10-28 13:07:41,957][root][INFO] - Step 58880 @ 0.0 SPS. Inference batcher size: 37. Learner queue size: 32. Other stats: (train_seconds = 576.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.017434, step = 58880, mean_episode_return = -0.0034274, mean_episode_step = 15.11, total_loss = -111.63, entropy_loss = -4.0794, pg_loss = -113.98, baseline_loss = 4.2765, learner_queue_size = 32, _tick = 22, _time = 1.6985e+09)
+[2023-10-28 13:07:46,962][root][INFO] - Step 58880 @ 0.0 SPS. Inference batcher size: 56. Learner queue size: 32. Other stats: (train_seconds = 581.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.017434, step = 58880, mean_episode_return = -0.0034274, mean_episode_step = 15.11, total_loss = -111.63, entropy_loss = -4.0794, pg_loss = -113.98, baseline_loss = 4.2765, learner_queue_size = 32, _tick = 22, _time = 1.6985e+09)
+[2023-10-28 13:07:51,972][root][INFO] - Step 61440 @ 510.8 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 586.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026131, step = 61440, mean_episode_return = -0.0032553, mean_episode_step = 13.657, total_loss = 84.764, entropy_loss = -4.0728, pg_loss = 82.518, baseline_loss = 3.531, learner_queue_size = 32, _tick = 23, _time = 1.6985e+09)
+[2023-10-28 13:07:56,979][root][INFO] - Step 61440 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 591.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026131, step = 61440, mean_episode_return = -0.0032553, mean_episode_step = 13.657, total_loss = 84.764, entropy_loss = -4.0728, pg_loss = 82.518, baseline_loss = 3.531, learner_queue_size = 32, _tick = 23, _time = 1.6985e+09)
+[2023-10-28 13:08:01,985][root][INFO] - Step 61440 @ 0.0 SPS. Inference batcher size: 2. Learner queue size: 32. Other stats: (train_seconds = 596.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026131, step = 61440, mean_episode_return = -0.0032553, mean_episode_step = 13.657, total_loss = 84.764, entropy_loss = -4.0728, pg_loss = 82.518, baseline_loss = 3.531, learner_queue_size = 32, _tick = 23, _time = 1.6985e+09)
+[2023-10-28 13:08:06,992][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-58-00/quest_easy.tar
+[2023-10-28 13:08:07,063][root][INFO] - Step 61440 @ 0.0 SPS. Inference batcher size: 80. Learner queue size: 32. Other stats: (train_seconds = 601.2, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026131, step = 61440, mean_episode_return = -0.0032553, mean_episode_step = 13.657, total_loss = 84.764, entropy_loss = -4.0728, pg_loss = 82.518, baseline_loss = 3.531, learner_queue_size = 32, _tick = 23, _time = 1.6985e+09)
+[2023-10-28 13:08:12,069][root][INFO] - Step 64000 @ 504.3 SPS. Inference batcher size: 107. Learner queue size: 32. Other stats: (train_seconds = 606.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.018486, step = 64000, mean_episode_return = -0.0037197, mean_episode_step = 14.507, total_loss = -68.974, entropy_loss = -4.0658, pg_loss = -71.741, baseline_loss = 3.5703, learner_queue_size = 32, _tick = 24, _time = 1.6985e+09)
+[2023-10-28 13:08:17,077][root][INFO] - Step 64000 @ 0.0 SPS. Inference batcher size: 57. Learner queue size: 32. Other stats: (train_seconds = 611.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.018486, step = 64000, mean_episode_return = -0.0037197, mean_episode_step = 14.507, total_loss = -68.974, entropy_loss = -4.0658, pg_loss = -71.741, baseline_loss = 3.5703, learner_queue_size = 32, _tick = 24, _time = 1.6985e+09)
+[2023-10-28 13:08:22,085][root][INFO] - Step 64000 @ 0.0 SPS. Inference batcher size: 89. Learner queue size: 32. Other stats: (train_seconds = 616.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.018486, step = 64000, mean_episode_return = -0.0037197, mean_episode_step = 14.507, total_loss = -68.974, entropy_loss = -4.0658, pg_loss = -71.741, baseline_loss = 3.5703, learner_queue_size = 32, _tick = 24, _time = 1.6985e+09)
+[2023-10-28 13:08:27,089][root][INFO] - Step 64000 @ 0.0 SPS. Inference batcher size: 0. Learner queue size: 32. Other stats: (train_seconds = 621.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.018486, step = 64000, mean_episode_return = -0.0037197, mean_episode_step = 14.507, total_loss = -68.974, entropy_loss = -4.0658, pg_loss = -71.741, baseline_loss = 3.5703, learner_queue_size = 32, _tick = 24, _time = 1.6985e+09)
+[2023-10-28 13:08:32,097][root][INFO] - Step 64000 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 626.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.018486, step = 64000, mean_episode_return = -0.0037197, mean_episode_step = 14.507, total_loss = -68.974, entropy_loss = -4.0658, pg_loss = -71.741, baseline_loss = 3.5703, learner_queue_size = 32, _tick = 24, _time = 1.6985e+09)
+[2023-10-28 13:08:37,106][root][INFO] - Step 66560 @ 511.2 SPS. Inference batcher size: 3. Learner queue size: 32. Other stats: (train_seconds = 631.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.02534, step = 66560, mean_episode_return = -0.0035969, mean_episode_step = 16.625, total_loss = 26.032, entropy_loss = -4.0673, pg_loss = 21.915, baseline_loss = 4.9897, learner_queue_size = 32, _tick = 25, _time = 1.6985e+09)
+[2023-10-28 13:08:42,117][root][INFO] - Step 66560 @ 0.0 SPS. Inference batcher size: 27. Learner queue size: 32. Other stats: (train_seconds = 636.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.02534, step = 66560, mean_episode_return = -0.0035969, mean_episode_step = 16.625, total_loss = 26.032, entropy_loss = -4.0673, pg_loss = 21.915, baseline_loss = 4.9897, learner_queue_size = 32, _tick = 25, _time = 1.6985e+09)
+[2023-10-28 13:08:47,125][root][INFO] - Step 66560 @ 0.0 SPS. Inference batcher size: 6. Learner queue size: 32. Other stats: (train_seconds = 641.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.02534, step = 66560, mean_episode_return = -0.0035969, mean_episode_step = 16.625, total_loss = 26.032, entropy_loss = -4.0673, pg_loss = 21.915, baseline_loss = 4.9897, learner_queue_size = 32, _tick = 25, _time = 1.6985e+09)
+[2023-10-28 13:08:52,134][root][INFO] - Step 66560 @ 0.0 SPS. Inference batcher size: 30. Learner queue size: 32. Other stats: (train_seconds = 646.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.02534, step = 66560, mean_episode_return = -0.0035969, mean_episode_step = 16.625, total_loss = 26.032, entropy_loss = -4.0673, pg_loss = 21.915, baseline_loss = 4.9897, learner_queue_size = 32, _tick = 25, _time = 1.6985e+09)
+[2023-10-28 13:08:57,141][root][INFO] - Step 69120 @ 511.2 SPS. Inference batcher size: 19. Learner queue size: 32. Other stats: (train_seconds = 651.3, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.028416, step = 69120, mean_episode_return = -0.0034836, mean_episode_step = 15.365, total_loss = 4.5307, entropy_loss = -4.0547, pg_loss = 1.2342, baseline_loss = 2.9974, learner_queue_size = 32, _tick = 26, _time = 1.6985e+09)
+[2023-10-28 13:09:02,149][root][INFO] - Step 69120 @ 0.0 SPS. Inference batcher size: 68. Learner queue size: 32. Other stats: (train_seconds = 656.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.028416, step = 69120, mean_episode_return = -0.0034836, mean_episode_step = 15.365, total_loss = 4.5307, entropy_loss = -4.0547, pg_loss = 1.2342, baseline_loss = 2.9974, learner_queue_size = 32, _tick = 26, _time = 1.6985e+09)
+[2023-10-28 13:09:07,157][root][INFO] - Step 69120 @ 0.0 SPS. Inference batcher size: 37. Learner queue size: 32. Other stats: (train_seconds = 661.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.028416, step = 69120, mean_episode_return = -0.0034836, mean_episode_step = 15.365, total_loss = 4.5307, entropy_loss = -4.0547, pg_loss = 1.2342, baseline_loss = 2.9974, learner_queue_size = 32, _tick = 26, _time = 1.6985e+09)
+[2023-10-28 13:09:12,164][root][INFO] - Step 69120 @ 0.0 SPS. Inference batcher size: 70. Learner queue size: 32. Other stats: (train_seconds = 666.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.028416, step = 69120, mean_episode_return = -0.0034836, mean_episode_step = 15.365, total_loss = 4.5307, entropy_loss = -4.0547, pg_loss = 1.2342, baseline_loss = 2.9974, learner_queue_size = 32, _tick = 26, _time = 1.6985e+09)
+[2023-10-28 13:09:17,170][root][INFO] - Step 71680 @ 511.6 SPS. Inference batcher size: 31. Learner queue size: 32. Other stats: (train_seconds = 671.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.025695, step = 71680, mean_episode_return = -0.0034091, mean_episode_step = 15.084, total_loss = 22.622, entropy_loss = -4.0614, pg_loss = 20.325, baseline_loss = 2.5786, learner_queue_size = 32, _tick = 27, _time = 1.6985e+09)
+[2023-10-28 13:09:22,182][root][INFO] - Step 71680 @ 0.0 SPS. Inference batcher size: 121. Learner queue size: 32. Other stats: (train_seconds = 676.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.025695, step = 71680, mean_episode_return = -0.0034091, mean_episode_step = 15.084, total_loss = 22.622, entropy_loss = -4.0614, pg_loss = 20.325, baseline_loss = 2.5786, learner_queue_size = 32, _tick = 27, _time = 1.6985e+09)
+[2023-10-28 13:09:27,189][root][INFO] - Step 71680 @ 0.0 SPS. Inference batcher size: 32. Learner queue size: 32. Other stats: (train_seconds = 681.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.025695, step = 71680, mean_episode_return = -0.0034091, mean_episode_step = 15.084, total_loss = 22.622, entropy_loss = -4.0614, pg_loss = 20.325, baseline_loss = 2.5786, learner_queue_size = 32, _tick = 27, _time = 1.6985e+09)
+[2023-10-28 13:09:32,192][root][INFO] - Step 71680 @ 0.0 SPS. Inference batcher size: 62. Learner queue size: 32. Other stats: (train_seconds = 686.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.025695, step = 71680, mean_episode_return = -0.0034091, mean_episode_step = 15.084, total_loss = 22.622, entropy_loss = -4.0614, pg_loss = 20.325, baseline_loss = 2.5786, learner_queue_size = 32, _tick = 27, _time = 1.6985e+09)
+[2023-10-28 13:09:37,196][root][INFO] - Step 71680 @ 0.0 SPS. Inference batcher size: 47. Learner queue size: 32. Other stats: (train_seconds = 691.4, success_rate = 0.0, meta_entropy = tensor(1.3863), hks_loss = 0.025695, step = 71680, mean_episode_return = -0.0034091, mean_episode_step = 15.084, total_loss = 22.622, entropy_loss = -4.0614, pg_loss = 20.325, baseline_loss = 2.5786, learner_queue_size = 32, _tick = 27, _time = 1.6985e+09)
+[2023-10-28 13:09:42,201][root][INFO] - Step 74240 @ 511.6 SPS. Inference batcher size: 24. Learner queue size: 32. Other stats: (train_seconds = 696.4, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.023435, step = 74240, mean_episode_return = -0.0030507, mean_episode_step = 13.955, total_loss = -29.939, entropy_loss = -4.0616, pg_loss = -32.754, baseline_loss = 3.0935, learner_queue_size = 32, _tick = 28, _time = 1.6985e+09)
+[2023-10-28 13:09:47,210][root][INFO] - Step 74240 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 701.4, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.023435, step = 74240, mean_episode_return = -0.0030507, mean_episode_step = 13.955, total_loss = -29.939, entropy_loss = -4.0616, pg_loss = -32.754, baseline_loss = 3.0935, learner_queue_size = 32, _tick = 28, _time = 1.6985e+09)
+[2023-10-28 13:09:52,216][root][INFO] - Step 74240 @ 0.0 SPS. Inference batcher size: 6. Learner queue size: 32. Other stats: (train_seconds = 706.4, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.023435, step = 74240, mean_episode_return = -0.0030507, mean_episode_step = 13.955, total_loss = -29.939, entropy_loss = -4.0616, pg_loss = -32.754, baseline_loss = 3.0935, learner_queue_size = 32, _tick = 28, _time = 1.6985e+09)
+[2023-10-28 13:09:57,222][root][INFO] - Step 74240 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 711.4, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.023435, step = 74240, mean_episode_return = -0.0030507, mean_episode_step = 13.955, total_loss = -29.939, entropy_loss = -4.0616, pg_loss = -32.754, baseline_loss = 3.0935, learner_queue_size = 32, _tick = 28, _time = 1.6985e+09)
+[2023-10-28 13:10:02,229][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-58-00/quest_easy_0.75.tar
+[2023-10-28 13:10:02,275][root][INFO] - Step 76800 @ 511.3 SPS. Inference batcher size: 22. Learner queue size: 32. Other stats: (train_seconds = 716.4, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033369, step = 76800, mean_episode_return = -0.0030149, mean_episode_step = 13.718, total_loss = 58.798, entropy_loss = -4.0639, pg_loss = 56.238, baseline_loss = 3.0356, learner_queue_size = 32, _tick = 29, _time = 1.6985e+09)
+[2023-10-28 13:10:07,284][root][INFO] - Step 76800 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 721.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033369, step = 76800, mean_episode_return = -0.0030149, mean_episode_step = 13.718, total_loss = 58.798, entropy_loss = -4.0639, pg_loss = 56.238, baseline_loss = 3.0356, learner_queue_size = 32, _tick = 29, _time = 1.6985e+09)
+[2023-10-28 13:10:12,289][root][INFO] - Step 76800 @ 0.0 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 726.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033369, step = 76800, mean_episode_return = -0.0030149, mean_episode_step = 13.718, total_loss = 58.798, entropy_loss = -4.0639, pg_loss = 56.238, baseline_loss = 3.0356, learner_queue_size = 32, _tick = 29, _time = 1.6985e+09)
+[2023-10-28 13:10:17,297][root][INFO] - Step 76800 @ 0.0 SPS. Inference batcher size: 12. Learner queue size: 32. Other stats: (train_seconds = 731.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033369, step = 76800, mean_episode_return = -0.0030149, mean_episode_step = 13.718, total_loss = 58.798, entropy_loss = -4.0639, pg_loss = 56.238, baseline_loss = 3.0356, learner_queue_size = 32, _tick = 29, _time = 1.6985e+09)
+[2023-10-28 13:10:22,306][root][INFO] - Step 79360 @ 511.2 SPS. Inference batcher size: 50. Learner queue size: 32. Other stats: (train_seconds = 736.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.018086, step = 79360, mean_episode_return = -0.0032973, mean_episode_step = 12.286, total_loss = -53.64, entropy_loss = -4.07, pg_loss = -55.83, baseline_loss = 3.2347, learner_queue_size = 32, _tick = 30, _time = 1.6985e+09)
+[2023-10-28 13:10:27,318][root][INFO] - Step 79360 @ 0.0 SPS. Inference batcher size: 3. Learner queue size: 32. Other stats: (train_seconds = 741.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.018086, step = 79360, mean_episode_return = -0.0032973, mean_episode_step = 12.286, total_loss = -53.64, entropy_loss = -4.07, pg_loss = -55.83, baseline_loss = 3.2347, learner_queue_size = 32, _tick = 30, _time = 1.6985e+09)
+[2023-10-28 13:10:32,325][root][INFO] - Step 79360 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 746.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.018086, step = 79360, mean_episode_return = -0.0032973, mean_episode_step = 12.286, total_loss = -53.64, entropy_loss = -4.07, pg_loss = -55.83, baseline_loss = 3.2347, learner_queue_size = 32, _tick = 30, _time = 1.6985e+09)
+[2023-10-28 13:10:37,328][root][INFO] - Step 79360 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 751.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.018086, step = 79360, mean_episode_return = -0.0032973, mean_episode_step = 12.286, total_loss = -53.64, entropy_loss = -4.07, pg_loss = -55.83, baseline_loss = 3.2347, learner_queue_size = 32, _tick = 30, _time = 1.6985e+09)
+[2023-10-28 13:10:42,333][root][INFO] - Step 79360 @ 0.0 SPS. Inference batcher size: 23. Learner queue size: 32. Other stats: (train_seconds = 756.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.018086, step = 79360, mean_episode_return = -0.0032973, mean_episode_step = 12.286, total_loss = -53.64, entropy_loss = -4.07, pg_loss = -55.83, baseline_loss = 3.2347, learner_queue_size = 32, _tick = 30, _time = 1.6985e+09)
+[2023-10-28 13:10:47,341][root][INFO] - Step 81920 @ 511.2 SPS. Inference batcher size: 18. Learner queue size: 32. Other stats: (train_seconds = 761.5, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026712, step = 81920, mean_episode_return = -0.0031353, mean_episode_step = 15.289, total_loss = -18.581, entropy_loss = -4.0642, pg_loss = -22.025, baseline_loss = 3.9728, learner_queue_size = 32, _tick = 31, _time = 1.6985e+09)
+[2023-10-28 13:10:52,348][root][INFO] - Step 81920 @ 0.0 SPS. Inference batcher size: 16. Learner queue size: 32. Other stats: (train_seconds = 766.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026712, step = 81920, mean_episode_return = -0.0031353, mean_episode_step = 15.289, total_loss = -18.581, entropy_loss = -4.0642, pg_loss = -22.025, baseline_loss = 3.9728, learner_queue_size = 32, _tick = 31, _time = 1.6985e+09)
+[2023-10-28 13:10:57,352][root][INFO] - Step 81920 @ 0.0 SPS. Inference batcher size: 13. Learner queue size: 32. Other stats: (train_seconds = 771.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026712, step = 81920, mean_episode_return = -0.0031353, mean_episode_step = 15.289, total_loss = -18.581, entropy_loss = -4.0642, pg_loss = -22.025, baseline_loss = 3.9728, learner_queue_size = 32, _tick = 31, _time = 1.6985e+09)
+[2023-10-28 13:11:02,358][root][INFO] - Step 81920 @ 0.0 SPS. Inference batcher size: 21. Learner queue size: 32. Other stats: (train_seconds = 776.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026712, step = 81920, mean_episode_return = -0.0031353, mean_episode_step = 15.289, total_loss = -18.581, entropy_loss = -4.0642, pg_loss = -22.025, baseline_loss = 3.9728, learner_queue_size = 32, _tick = 31, _time = 1.6985e+09)
+[2023-10-28 13:11:07,369][root][INFO] - Step 84480 @ 510.8 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 781.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033744, step = 84480, mean_episode_return = -0.0031522, mean_episode_step = 13.936, total_loss = 69.121, entropy_loss = -4.0573, pg_loss = 66.213, baseline_loss = 2.7923, learner_queue_size = 32, _tick = 32, _time = 1.6985e+09)
+[2023-10-28 13:11:12,377][root][INFO] - Step 84480 @ 0.0 SPS. Inference batcher size: 66. Learner queue size: 32. Other stats: (train_seconds = 786.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033744, step = 84480, mean_episode_return = -0.0031522, mean_episode_step = 13.936, total_loss = 69.121, entropy_loss = -4.0573, pg_loss = 66.213, baseline_loss = 2.7923, learner_queue_size = 32, _tick = 32, _time = 1.6985e+09)
+[2023-10-28 13:11:17,386][root][INFO] - Step 84480 @ 0.0 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 791.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033744, step = 84480, mean_episode_return = -0.0031522, mean_episode_step = 13.936, total_loss = 69.121, entropy_loss = -4.0573, pg_loss = 66.213, baseline_loss = 2.7923, learner_queue_size = 32, _tick = 32, _time = 1.6985e+09)
+[2023-10-28 13:11:22,392][root][INFO] - Step 84480 @ 0.0 SPS. Inference batcher size: 86. Learner queue size: 32. Other stats: (train_seconds = 796.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033744, step = 84480, mean_episode_return = -0.0031522, mean_episode_step = 13.936, total_loss = 69.121, entropy_loss = -4.0573, pg_loss = 66.213, baseline_loss = 2.7923, learner_queue_size = 32, _tick = 32, _time = 1.6985e+09)
+[2023-10-28 13:11:27,398][root][INFO] - Step 84480 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 801.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.033744, step = 84480, mean_episode_return = -0.0031522, mean_episode_step = 13.936, total_loss = 69.121, entropy_loss = -4.0573, pg_loss = 66.213, baseline_loss = 2.7923, learner_queue_size = 32, _tick = 32, _time = 1.6985e+09)
+[2023-10-28 13:11:32,408][root][INFO] - Step 87040 @ 510.8 SPS. Inference batcher size: 1. Learner queue size: 32. Other stats: (train_seconds = 806.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.024593, step = 87040, mean_episode_return = -0.0029726, mean_episode_step = 13.421, total_loss = -11.282, entropy_loss = -4.0648, pg_loss = -13.681, baseline_loss = 2.9077, learner_queue_size = 32, _tick = 33, _time = 1.6985e+09)
+[2023-10-28 13:11:37,413][root][INFO] - Step 87040 @ 0.0 SPS. Inference batcher size: 39. Learner queue size: 32. Other stats: (train_seconds = 811.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.024593, step = 87040, mean_episode_return = -0.0029726, mean_episode_step = 13.421, total_loss = -11.282, entropy_loss = -4.0648, pg_loss = -13.681, baseline_loss = 2.9077, learner_queue_size = 32, _tick = 33, _time = 1.6985e+09)
+[2023-10-28 13:11:42,419][root][INFO] - Step 87040 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 816.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.024593, step = 87040, mean_episode_return = -0.0029726, mean_episode_step = 13.421, total_loss = -11.282, entropy_loss = -4.0648, pg_loss = -13.681, baseline_loss = 2.9077, learner_queue_size = 32, _tick = 33, _time = 1.6985e+09)
+[2023-10-28 13:11:47,424][root][INFO] - Step 87040 @ 0.0 SPS. Inference batcher size: 11. Learner queue size: 32. Other stats: (train_seconds = 821.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.024593, step = 87040, mean_episode_return = -0.0029726, mean_episode_step = 13.421, total_loss = -11.282, entropy_loss = -4.0648, pg_loss = -13.681, baseline_loss = 2.9077, learner_queue_size = 32, _tick = 33, _time = 1.6985e+09)
+[2023-10-28 13:11:52,430][root][INFO] - Step 89600 @ 511.6 SPS. Inference batcher size: 60. Learner queue size: 32. Other stats: (train_seconds = 826.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026375, step = 89600, mean_episode_return = -0.0028658, mean_episode_step = 13.068, total_loss = 40.42, entropy_loss = -4.0656, pg_loss = 38.701, baseline_loss = 2.3079, learner_queue_size = 32, _tick = 34, _time = 1.6985e+09)
+[2023-10-28 13:11:57,437][root][INFO] - Step 89600 @ 0.0 SPS. Inference batcher size: 28. Learner queue size: 32. Other stats: (train_seconds = 831.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026375, step = 89600, mean_episode_return = -0.0028658, mean_episode_step = 13.068, total_loss = 40.42, entropy_loss = -4.0656, pg_loss = 38.701, baseline_loss = 2.3079, learner_queue_size = 32, _tick = 34, _time = 1.6985e+09)
+[2023-10-28 13:12:02,441][root][INFO] - Step 89600 @ 0.0 SPS. Inference batcher size: 9. Learner queue size: 32. Other stats: (train_seconds = 836.6, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026375, step = 89600, mean_episode_return = -0.0028658, mean_episode_step = 13.068, total_loss = 40.42, entropy_loss = -4.0656, pg_loss = 38.701, baseline_loss = 2.3079, learner_queue_size = 32, _tick = 34, _time = 1.6985e+09)
+[2023-10-28 13:12:07,449][root][INFO] - Step 89600 @ 0.0 SPS. Inference batcher size: 15. Learner queue size: 32. Other stats: (train_seconds = 841.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.026375, step = 89600, mean_episode_return = -0.0028658, mean_episode_step = 13.068, total_loss = 40.42, entropy_loss = -4.0656, pg_loss = 38.701, baseline_loss = 2.3079, learner_queue_size = 32, _tick = 34, _time = 1.6985e+09)
+[2023-10-28 13:12:12,457][root][INFO] - Step 92160 @ 511.2 SPS. Inference batcher size: 22. Learner queue size: 32. Other stats: (train_seconds = 846.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.022956, step = 92160, mean_episode_return = -0.0031493, mean_episode_step = 14.815, total_loss = -29.009, entropy_loss = -4.0679, pg_loss = -30.862, baseline_loss = 2.6701, learner_queue_size = 32, _tick = 35, _time = 1.6985e+09)
+[2023-10-28 13:12:17,466][root][INFO] - Step 92160 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 851.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.022956, step = 92160, mean_episode_return = -0.0031493, mean_episode_step = 14.815, total_loss = -29.009, entropy_loss = -4.0679, pg_loss = -30.862, baseline_loss = 2.6701, learner_queue_size = 32, _tick = 35, _time = 1.6985e+09)
+[2023-10-28 13:12:22,472][root][INFO] - Step 92160 @ 0.0 SPS. Inference batcher size: 14. Learner queue size: 32. Other stats: (train_seconds = 856.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.022956, step = 92160, mean_episode_return = -0.0031493, mean_episode_step = 14.815, total_loss = -29.009, entropy_loss = -4.0679, pg_loss = -30.862, baseline_loss = 2.6701, learner_queue_size = 32, _tick = 35, _time = 1.6985e+09)
+[2023-10-28 13:12:27,477][root][INFO] - Step 92160 @ 0.0 SPS. Inference batcher size: 81. Learner queue size: 32. Other stats: (train_seconds = 861.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.022956, step = 92160, mean_episode_return = -0.0031493, mean_episode_step = 14.815, total_loss = -29.009, entropy_loss = -4.0679, pg_loss = -30.862, baseline_loss = 2.6701, learner_queue_size = 32, _tick = 35, _time = 1.6985e+09)
+[2023-10-28 13:12:32,480][root][INFO] - Step 92160 @ 0.0 SPS. Inference batcher size: 68. Learner queue size: 32. Other stats: (train_seconds = 866.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.022956, step = 92160, mean_episode_return = -0.0031493, mean_episode_step = 14.815, total_loss = -29.009, entropy_loss = -4.0679, pg_loss = -30.862, baseline_loss = 2.6701, learner_queue_size = 32, _tick = 35, _time = 1.6985e+09)
+[2023-10-28 13:12:37,484][root][INFO] - Step 94720 @ 511.6 SPS. Inference batcher size: 84. Learner queue size: 32. Other stats: (train_seconds = 871.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.025443, step = 94720, mean_episode_return = -0.0031259, mean_episode_step = 15.109, total_loss = -53.338, entropy_loss = -4.0673, pg_loss = -56.984, baseline_loss = 4.4179, learner_queue_size = 32, _tick = 36, _time = 1.6985e+09)
+[2023-10-28 13:12:42,494][root][INFO] - Step 94720 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 876.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.025443, step = 94720, mean_episode_return = -0.0031259, mean_episode_step = 15.109, total_loss = -53.338, entropy_loss = -4.0673, pg_loss = -56.984, baseline_loss = 4.4179, learner_queue_size = 32, _tick = 36, _time = 1.6985e+09)
+[2023-10-28 13:12:47,501][root][INFO] - Step 94720 @ 0.0 SPS. Inference batcher size: 15. Learner queue size: 32. Other stats: (train_seconds = 881.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.025443, step = 94720, mean_episode_return = -0.0031259, mean_episode_step = 15.109, total_loss = -53.338, entropy_loss = -4.0673, pg_loss = -56.984, baseline_loss = 4.4179, learner_queue_size = 32, _tick = 36, _time = 1.6985e+09)
+[2023-10-28 13:12:52,505][root][INFO] - Step 94720 @ 0.0 SPS. Inference batcher size: 19. Learner queue size: 32. Other stats: (train_seconds = 886.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.025443, step = 94720, mean_episode_return = -0.0031259, mean_episode_step = 15.109, total_loss = -53.338, entropy_loss = -4.0673, pg_loss = -56.984, baseline_loss = 4.4179, learner_queue_size = 32, _tick = 36, _time = 1.6985e+09)
+[2023-10-28 13:12:57,509][root][INFO] - Step 97280 @ 511.6 SPS. Inference batcher size: 18. Learner queue size: 32. Other stats: (train_seconds = 891.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.030702, step = 97280, mean_episode_return = -0.0029574, mean_episode_step = 14.276, total_loss = 18.106, entropy_loss = -4.0629, pg_loss = 15.106, baseline_loss = 3.3694, learner_queue_size = 32, _tick = 37, _time = 1.6985e+09)
+[2023-10-28 13:13:02,518][root][INFO] - Step 97280 @ 0.0 SPS. Inference batcher size: 1. Learner queue size: 32. Other stats: (train_seconds = 896.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.030702, step = 97280, mean_episode_return = -0.0029574, mean_episode_step = 14.276, total_loss = 18.106, entropy_loss = -4.0629, pg_loss = 15.106, baseline_loss = 3.3694, learner_queue_size = 32, _tick = 37, _time = 1.6985e+09)
+[2023-10-28 13:13:07,525][root][INFO] - Step 97280 @ 0.0 SPS. Inference batcher size: 25. Learner queue size: 32. Other stats: (train_seconds = 901.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.030702, step = 97280, mean_episode_return = -0.0029574, mean_episode_step = 14.276, total_loss = 18.106, entropy_loss = -4.0629, pg_loss = 15.106, baseline_loss = 3.3694, learner_queue_size = 32, _tick = 37, _time = 1.6985e+09)
+[2023-10-28 13:13:12,533][root][INFO] - Step 97280 @ 0.0 SPS. Inference batcher size: 4. Learner queue size: 32. Other stats: (train_seconds = 906.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.030702, step = 97280, mean_episode_return = -0.0029574, mean_episode_step = 14.276, total_loss = 18.106, entropy_loss = -4.0629, pg_loss = 15.106, baseline_loss = 3.3694, learner_queue_size = 32, _tick = 37, _time = 1.6985e+09)
+[2023-10-28 13:13:17,541][root][INFO] - Step 99840 @ 511.2 SPS. Inference batcher size: 77. Learner queue size: 32. Other stats: (train_seconds = 911.7, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.029226, step = 99840, mean_episode_return = -0.0027793, mean_episode_step = 12.558, total_loss = 42.831, entropy_loss = -4.0633, pg_loss = 40.806, baseline_loss = 2.4216, learner_queue_size = 32, _tick = 38, _time = 1.6985e+09)
+[2023-10-28 13:13:22,549][root][INFO] - Step 99840 @ 0.0 SPS. Inference batcher size: 98. Learner queue size: 32. Other stats: (train_seconds = 916.8, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.029226, step = 99840, mean_episode_return = -0.0027793, mean_episode_step = 12.558, total_loss = 42.831, entropy_loss = -4.0633, pg_loss = 40.806, baseline_loss = 2.4216, learner_queue_size = 32, _tick = 38, _time = 1.6985e+09)
+[2023-10-28 13:13:27,556][root][INFO] - Step 99840 @ 0.0 SPS. Inference batcher size: 16. Learner queue size: 32. Other stats: (train_seconds = 921.8, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.029226, step = 99840, mean_episode_return = -0.0027793, mean_episode_step = 12.558, total_loss = 42.831, entropy_loss = -4.0633, pg_loss = 40.806, baseline_loss = 2.4216, learner_queue_size = 32, _tick = 38, _time = 1.6985e+09)
+[2023-10-28 13:13:32,561][root][INFO] - Step 99840 @ 0.0 SPS. Inference batcher size: 57. Learner queue size: 32. Other stats: (train_seconds = 926.8, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.029226, step = 99840, mean_episode_return = -0.0027793, mean_episode_step = 12.558, total_loss = 42.831, entropy_loss = -4.0633, pg_loss = 40.806, baseline_loss = 2.4216, learner_queue_size = 32, _tick = 38, _time = 1.6985e+09)
+[2023-10-28 13:13:37,564][root][INFO] - Step 102400 @ 511.7 SPS. Inference batcher size: 13. Learner queue size: 32. Other stats: (train_seconds = 931.8, success_rate = 0.0, meta_entropy = tensor(1.3862), hks_loss = 0.027074, step = 102400, mean_episode_return = -0.0023896, mean_episode_step = 12.39, total_loss = 39.745, entropy_loss = -4.0645, pg_loss = 37.385, baseline_loss = 2.8761, learner_queue_size = 32, _tick = 39, _time = 1.6985e+09)
+[2023-10-28 13:13:37,566][root][INFO] - Learning finished after 102400 steps.
+[2023-10-28 13:13:37,566][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-58-00/quest_easy.tar

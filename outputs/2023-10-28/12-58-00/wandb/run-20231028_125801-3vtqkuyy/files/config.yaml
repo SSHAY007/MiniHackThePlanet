@@ -1,0 +1,274 @@
+wandb_version: 1
+
+name:
+  desc: null
+  value: null
+wandb:
+  desc: null
+  value: true
+project:
+  desc: null
+  value: MiniHackQuestHard
+entity:
+  desc: null
+  value: teamshayshay
+group:
+  desc: null
+  value: default
+state_dict_path:
+  desc: null
+  value: none
+foc_options_path:
+  desc: null
+  value:
+  - /workspace/skill_transfer_weights/mini_skill_pick_up.tar
+  - /workspace/skill_transfer_weights/mini_skill_fight.tar
+  - /workspace/skill_transfer_weights/mini_skill_nav_blind.tar
+  - /workspace/skill_transfer_weights/mini_skill_nav_lava.tar
+foc_options_config_path:
+  desc: null
+  value:
+  - /workspace/skill_transfer_weights/skill_config.yaml
+  - /workspace/skill_transfer_weights/skill_config.yaml
+  - /workspace/skill_transfer_weights/skill_config.yaml
+  - /workspace/skill_transfer_weights/skill_config.yaml
+teacher_path:
+  desc: null
+  value: none
+teacher_config_path:
+  desc: null
+  value: none
+ks_max_lambda:
+  desc: null
+  value: 10
+ks_max_time:
+  desc: null
+  value: 20000000.0
+ks_min_lambda_prop:
+  desc: null
+  value: 0.05
+train_with_all_skills:
+  desc: null
+  value: false
+penalty_per_step:
+  desc: null
+  value: 0.01
+hks_max_uniform_weight:
+  desc: null
+  value: 20
+hks_min_uniform_prop:
+  desc: null
+  value: 0
+hks_max_uniform_time:
+  desc: null
+  value: 200000.0
+tasks_json:
+  desc: null
+  value: tasks
+mock:
+  desc: null
+  value: false
+single_ttyrec:
+  desc: null
+  value: true
+num_seeds:
+  desc: null
+  value: 0
+write_profiler_trace:
+  desc: null
+  value: false
+relative_reward:
+  desc: null
+  value: false
+fn_penalty_step:
+  desc: null
+  value: constant
+penalty_time:
+  desc: null
+  value: 0.0
+penalty_step:
+  desc: null
+  value: -0.001
+reward_lose:
+  desc: null
+  value: 0
+reward_win:
+  desc: null
+  value: 1
+character:
+  desc: null
+  value: null
+save_tty:
+  desc: null
+  value: false
+mode:
+  desc: null
+  value: train
+env:
+  desc: null
+  value: quest_easy
+obs_keys:
+  desc: null
+  value: glyphs,chars,colors,specials,blstats,message
+num_actors:
+  desc: null
+  value: 256
+total_steps:
+  desc: null
+  value: 100000.0
+batch_size:
+  desc: null
+  value: 32
+unroll_length:
+  desc: null
+  value: 80
+num_learner_threads:
+  desc: null
+  value: 1
+num_inference_threads:
+  desc: null
+  value: 1
+disable_cuda:
+  desc: null
+  value: false
+learner_device:
+  desc: null
+  value: cuda:0
+actor_device:
+  desc: null
+  value: cuda:0
+max_learner_queue_size:
+  desc: null
+  value: null
+model:
+  desc: null
+  value: hks
+use_lstm:
+  desc: null
+  value: true
+hidden_dim:
+  desc: null
+  value: 256
+embedding_dim:
+  desc: null
+  value: 64
+glyph_type:
+  desc: null
+  value: all_cat
+equalize_input_dim:
+  desc: null
+  value: false
+equalize_factor:
+  desc: null
+  value: 2
+layers:
+  desc: null
+  value: 5
+crop_model:
+  desc: null
+  value: cnn
+crop_dim:
+  desc: null
+  value: 9
+use_index_select:
+  desc: null
+  value: true
+entropy_cost:
+  desc: null
+  value: 0.001
+baseline_cost:
+  desc: null
+  value: 0.5
+discounting:
+  desc: null
+  value: 0.999
+reward_clipping:
+  desc: null
+  value: none
+normalize_reward:
+  desc: null
+  value: true
+learning_rate:
+  desc: null
+  value: 0.0002
+grad_norm_clipping:
+  desc: null
+  value: 40
+alpha:
+  desc: null
+  value: 0.99
+momentum:
+  desc: null
+  value: 0
+epsilon:
+  desc: null
+  value: 1.0e-06
+state_counter:
+  desc: null
+  value: none
+no_extrinsic:
+  desc: null
+  value: false
+int:
+  desc: null
+  value:
+    twoheaded: true
+    input: full
+    intrinsic_weight: 0.1
+    discounting: 0.99
+    baseline_cost: 0.5
+    episodic: true
+    reward_clipping: none
+    normalize_reward: true
+ride:
+  desc: null
+  value:
+    count_norm: true
+    forward_cost: 1
+    inverse_cost: 0.1
+    hidden_dim: 128
+rnd:
+  desc: null
+  value:
+    forward_cost: 0.01
+msg:
+  desc: null
+  value:
+    model: none
+    hidden_dim: 64
+    embedding_dim: 32
+pipes_basename:
+  desc: null
+  value: unix:/tmp/poly.outputs.2023-10-28.12-58-00
+savedir:
+  desc: null
+  value: /workspace/outputs/2023-10-28/12-58-00
+checkpoint:
+  desc: null
+  value: /workspace/outputs/2023-10-28/12-58-00/quest_easy.tar
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.18
+    cli_version: 0.15.12
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1698497881.505496
+    t:
+      1:
+      - 1
+      - 50
+      - 55
+      2:
+      - 1
+      - 50
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.8.18
+      5: 0.15.12
+      8:
+      - 5
+      13: linux-x86_64

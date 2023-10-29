@@ -1,0 +1,3 @@
+Saving logs data to /workspace/outputs/2023-10-28/12-58-00/logs.csv
+Saving logs' fields to /workspace/outputs/2023-10-28/12-58-00/fields.csv
+Updated log fields: ['_tick', '_time', 'train_seconds', 'success_rate', 'meta_entropy', 'hks_loss', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']

@@ -1,0 +1,365 @@
+[2023-10-28 08:36:37,004][root][INFO] - name: null
+wandb: false
+project: skillhack
+entity: your_entity_name
+group: default
+state_dict_path: none
+foc_options_path: none
+foc_options_config_path: none
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.1
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 1000
+hks_min_uniform_prop: 0.05
+hks_max_uniform_time: 20000000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: mini_skill_fight
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 100.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: baseline
+use_lstm: false
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-28 08:36:37,019][root][INFO] - Symlinked log directory: /workspace/latest
+[2023-10-28 08:36:37,020][root][INFO] - Creating archive directory: /workspace/outputs/2023-10-28/08-36-36/archives
+[2023-10-28 08:36:37,024][root][INFO] - Logging results to /workspace/outputs/2023-10-28/08-36-36
+[2023-10-28 08:36:37,070][palaas/out][INFO] - Found log directory: /workspace/outputs/2023-10-28/08-36-36
+[2023-10-28 08:36:37,070][palaas/out][INFO] - Saving arguments to /workspace/outputs/2023-10-28/08-36-36/meta.json
+[2023-10-28 08:36:37,071][palaas/out][INFO] - Saving messages to /workspace/outputs/2023-10-28/08-36-36/out.log
+[2023-10-28 08:36:37,071][palaas/out][INFO] - Saving logs data to /workspace/outputs/2023-10-28/08-36-36/logs.csv
+[2023-10-28 08:36:37,071][palaas/out][INFO] - Saving logs' fields to /workspace/outputs/2023-10-28/08-36-36/fields.csv
+[2023-10-28 08:36:37,072][root][INFO] - Not using CUDA.
+[2023-10-28 08:36:37,077][root][INFO] - Using model baseline
+[2023-10-28 08:36:37,101][root][INFO] - Number of model parameters: 3717182
+[2023-10-28 08:36:37,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,135][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,139][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,142][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,145][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,143][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,143][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,143][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,143][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:37,147][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,131][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,132][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,131][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,133][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,135][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,135][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,135][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,138][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,139][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,139][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,139][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,140][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,131][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,148][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,148][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,148][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,148][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,149][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,149][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,150][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,156][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,158][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,154][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,132][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,160][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,160][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,161][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,161][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,132][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,165][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,136][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,168][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,168][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,168][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,136][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,136][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,173][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,136][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,177][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,137][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,135][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,181][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,185][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,185][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,187][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,189][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,189][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,189][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,193][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,144][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,197][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,197][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,146][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,152][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,253][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,270][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,304][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,316][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,330][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,330][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,344][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,375][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,392][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,409][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,410][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,429][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,442][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,444][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,463][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,477][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,488][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,489][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,490][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,493][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,497][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,488][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,486][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,511][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:38,533][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,463][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,467][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,472][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,476][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,497][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,504][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,513][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,522][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,525][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,524][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,529][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,538][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,538][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,546][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,553][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,553][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,553][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,559][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,559][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,567][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,576][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,591][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,593][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,610][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,633][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,634][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,638][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,640][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,640][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,649][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,649][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,649][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,651][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,638][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,653][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,654][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,655][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,661][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,657][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,669][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,676][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,680][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,685][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,686][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,687][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,690][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,691][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,701][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,703][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,707][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,713][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,725][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,731][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,743][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,749][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,751][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,766][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,768][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,768][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,775][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,777][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,786][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,801][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,809][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,813][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,839][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,839][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,850][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,854][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,858][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,856][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,870][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,870][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,883][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,882][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,887][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,892][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,882][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,896][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,904][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,910][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,917][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,919][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,932][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,935][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,942][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,954][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,971][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,986][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:39,996][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,004][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,006][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,007][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,011][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,018][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,019][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,029][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,047][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,052][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,059][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,067][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,075][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,086][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,086][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,092][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,100][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:40,130][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,707][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,713][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,759][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,771][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,944][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,955][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:41,973][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,132][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 139. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-28 08:36:42,164][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,223][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,383][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,464][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,511][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,592][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:42,610][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 08:36:47,140][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 126. Learner queue size: 17. Other stats: (train_seconds = 10.0)
+[2023-10-28 08:36:52,143][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 22. Other stats: (train_seconds = 15.0)
+[2023-10-28 08:36:57,147][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 94. Learner queue size: 32. Other stats: (train_seconds = 20.0)
+[2023-10-28 08:37:02,157][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 6. Learner queue size: 32. Other stats: (train_seconds = 25.0)
+[2023-10-28 08:37:06,007][palaas/out][INFO] - Updated log fields: ['_tick', '_time', 'train_seconds', 'success_rate', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']
+[2023-10-28 08:37:07,159][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/08-36-36/mini_skill_fight_0.tar
+[2023-10-28 08:37:07,200][root][INFO] - Step 2560 @ 511.2 SPS. Inference batcher size: 22. Learner queue size: 32. Other stats: (train_seconds = 30.0, success_rate = 0.63636, step = 2560, mean_episode_return = -0.066151, mean_episode_step = 28.834, total_loss = -622.5, entropy_loss = -4.1201, pg_loss = -845.03, baseline_loss = 226.65, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 08:37:07,201][root][INFO] - Learning finished after 2560 steps.
+[2023-10-28 08:37:07,201][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/08-36-36/mini_skill_fight.tar

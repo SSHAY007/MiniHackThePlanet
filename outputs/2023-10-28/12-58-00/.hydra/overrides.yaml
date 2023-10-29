@@ -1,0 +1,10 @@
+- model=hks
+- env=quest_easy
+- hks_max_uniform_weight=20
+- hks_min_uniform_prop=0
+- train_with_all_skills=false
+- ks_min_lambda_prop=0.05
+- hks_max_uniform_time=2e5
+- entity=teamshayshay
+- project=MiniHackQuestHard
+- wandb=true

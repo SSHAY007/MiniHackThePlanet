@@ -1,0 +1,110 @@
+{
+    "os": "Linux-6.2.0-35-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2023-10-28T12:58:02.330233",
+    "startedAt": "2023-10-28T12:58:01.495725",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "model=hks",
+        "env=quest_easy",
+        "hks_max_uniform_weight=20",
+        "hks_min_uniform_prop=0",
+        "train_with_all_skills=false",
+        "ks_min_lambda_prop=0.05",
+        "hks_max_uniform_time=2e5",
+        "entity=teamshayshay",
+        "project=MiniHackQuestHard",
+        "wandb=true"
+    ],
+    "state": "running",
+    "program": "-m agent.polybeast.skill_transfer_polyhydra",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:ucl-dark/skillhack.git",
+        "commit": "74c71bb9577ed5f91810a6710fde2cf9e8339841"
+    },
+    "email": null,
+    "root": "/workspace",
+    "host": "2e42e8347e6d",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 4151.464,
+        "min": 800.0,
+        "max": 4400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4199.868,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4199.293,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4205.946,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4199.98,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4213.887,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4200.063,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4199.826,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4161.106,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4199.243,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4199.904,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4200.0,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4199.91,
+            "min": 800.0,
+            "max": 4400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 937.3305015563965,
+            "used": 341.70687103271484
+        }
+    },
+    "memory": {
+        "total": 31.128070831298828
+    }
+}

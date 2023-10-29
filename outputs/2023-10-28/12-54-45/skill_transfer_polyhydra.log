@@ -1,0 +1,411 @@
+[2023-10-28 12:54:45,649][root][INFO] - name: null
+wandb: false
+project: MiniHackQuestHard
+entity: teamshayshay
+group: default
+state_dict_path: none
+foc_options_path:
+- /workspace/skill_transfer_weights/mini_skill_pick_up.tar
+- /workspace/skill_transfer_weights/mini_skill_fight.tar
+- /workspace/skill_transfer_weights/mini_skill_nav_blind.tar
+- /workspace/skill_transfer_weights/mini_skill_nav_lava.tar
+foc_options_config_path:
+- /workspace/skill_transfer_weights/skill_config.yaml
+- /workspace/skill_transfer_weights/skill_config.yaml
+- /workspace/skill_transfer_weights/skill_config.yaml
+- /workspace/skill_transfer_weights/skill_config.yaml
+teacher_path: none
+teacher_config_path: none
+ks_max_lambda: 10
+ks_max_time: 20000000.0
+ks_min_lambda_prop: 0.05
+train_with_all_skills: false
+penalty_per_step: 0.01
+hks_max_uniform_weight: 20
+hks_min_uniform_prop: 0
+hks_max_uniform_time: 200000.0
+tasks_json: tasks
+mock: false
+single_ttyrec: true
+num_seeds: 0
+write_profiler_trace: false
+relative_reward: false
+fn_penalty_step: constant
+penalty_time: 0.0
+penalty_step: -0.001
+reward_lose: 0
+reward_win: 1
+character: null
+save_tty: false
+mode: train
+env: quest_easy
+obs_keys: glyphs,chars,colors,specials,blstats,message
+num_actors: 256
+total_steps: 100000.0
+batch_size: 32
+unroll_length: 80
+num_learner_threads: 1
+num_inference_threads: 1
+disable_cuda: false
+learner_device: cuda:0
+actor_device: cuda:0
+max_learner_queue_size: null
+model: hks
+use_lstm: true
+hidden_dim: 256
+embedding_dim: 64
+glyph_type: all_cat
+equalize_input_dim: false
+equalize_factor: 2
+layers: 5
+crop_model: cnn
+crop_dim: 9
+use_index_select: true
+entropy_cost: 0.001
+baseline_cost: 0.5
+discounting: 0.999
+reward_clipping: none
+normalize_reward: true
+learning_rate: 0.0002
+grad_norm_clipping: 40
+alpha: 0.99
+momentum: 0
+epsilon: 1.0e-06
+state_counter: none
+no_extrinsic: false
+int:
+  twoheaded: true
+  input: full
+  intrinsic_weight: 0.1
+  discounting: 0.99
+  baseline_cost: 0.5
+  episodic: true
+  reward_clipping: none
+  normalize_reward: true
+ride:
+  count_norm: true
+  forward_cost: 1
+  inverse_cost: 0.1
+  hidden_dim: 128
+rnd:
+  forward_cost: 0.01
+msg:
+  model: none
+  hidden_dim: 64
+  embedding_dim: 32
+
+[2023-10-28 12:54:45,667][root][INFO] - Symlinked log directory: /workspace/latest
+[2023-10-28 12:54:45,668][root][INFO] - Creating archive directory: /workspace/outputs/2023-10-28/12-54-45/archives
+[2023-10-28 12:54:45,673][root][INFO] - Logging results to /workspace/outputs/2023-10-28/12-54-45
+[2023-10-28 12:54:45,721][palaas/out][INFO] - Found log directory: /workspace/outputs/2023-10-28/12-54-45
+[2023-10-28 12:54:45,721][palaas/out][INFO] - Saving arguments to /workspace/outputs/2023-10-28/12-54-45/meta.json
+[2023-10-28 12:54:45,722][palaas/out][INFO] - Saving messages to /workspace/outputs/2023-10-28/12-54-45/out.log
+[2023-10-28 12:54:45,722][palaas/out][INFO] - Saving logs data to /workspace/outputs/2023-10-28/12-54-45/logs.csv
+[2023-10-28 12:54:45,722][palaas/out][INFO] - Saving logs' fields to /workspace/outputs/2023-10-28/12-54-45/fields.csv
+[2023-10-28 12:54:45,723][root][INFO] - Not using CUDA.
+[2023-10-28 12:54:45,729][root][INFO] - Using model hks
+[2023-10-28 12:54:45,756][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_pick_up.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:45,757][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_fight.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:45,757][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_blind.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:45,757][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_lava.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:45,988][root][INFO] - Number of model parameters: 4244546
+[2023-10-28 12:54:46,009][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_pick_up.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:46,009][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_fight.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:46,009][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_blind.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:46,009][root][INFO] - ('/workspace/skill_transfer_weights/mini_skill_nav_lava.tar', '/workspace/skill_transfer_weights/skill_config.yaml')
+[2023-10-28 12:54:46,501][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,501][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,502][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,502][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,505][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,501][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,501][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,501][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,508][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,508][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,500][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,506][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,513][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,506][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,506][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,513][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,523][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,523][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,525][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,528][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,530][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,530][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,515][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,516][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,517][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,536][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,538][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,544][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,544][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,544][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,545][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,545][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,545][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,547][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,549][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,549][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,549][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,552][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,552][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,552][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,557][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,557][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,558][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,559][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,561][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,549][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,564][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,567][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,573][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,557][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,577][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,581][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,598][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,598][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,608][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,619][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,620][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,622][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,655][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,661][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,675][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,687][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,685][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,687][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,709][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,775][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,776][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,781][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,781][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,845][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,845][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,846][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,846][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,846][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,849][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,850][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,854][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,857][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,849][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,857][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,858][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,855][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,862][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,863][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,863][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,859][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,869][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,873][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,874][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,875][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,884][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,888][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,891][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,900][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,902][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,902][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,897][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,914][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,905][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,905][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,914][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,907][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,877][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,909][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,909][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,911][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,903][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,912][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,933][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:46,934][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,694][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,704][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,705][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,705][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,708][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,708][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,714][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,711][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,710][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,716][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,716][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,716][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,711][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,722][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,723][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,712][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,713][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,713][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,710][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,714][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,735][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,710][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,712][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,736][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,741][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,714][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,745][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,749][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,751][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,753][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,757][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,739][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,761][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,755][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,778][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,778][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,778][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,778][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,785][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,750][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,804][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:47,825][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:48,994][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,020][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,021][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,022][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,030][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,037][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,037][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,058][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,064][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,067][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,070][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,090][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,102][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,104][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,108][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,116][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,120][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,120][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,131][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,147][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,150][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,150][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,163][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,164][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,163][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,171][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,178][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,185][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,185][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,187][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,193][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,193][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,197][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,216][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,214][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,221][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,221][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,227][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,229][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,245][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,249][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,253][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,256][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,278][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,291][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,310][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,313][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,334][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,344][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,357][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,370][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,380][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,387][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,393][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,396][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,397][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,401][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,411][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,422][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,436][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,436][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,437][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,451][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,461][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,462][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,475][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,475][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,480][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,482][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,485][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,490][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,491][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,497][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,503][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,508][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,512][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,512][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,512][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,530][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,537][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,537][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,544][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,558][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,587][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,595][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,597][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,601][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,614][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,620][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,620][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,658][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:49,669][nle.env.base][INFO] - Not saving any NLE data.
+[2023-10-28 12:54:51,499][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 100. Learner queue size: 0. Other stats: (train_seconds = 5.0)
+[2023-10-28 12:54:56,505][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 64. Learner queue size: 0. Other stats: (train_seconds = 10.0)
+[2023-10-28 12:55:01,511][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 152. Learner queue size: 0. Other stats: (train_seconds = 15.0)
+[2023-10-28 12:55:06,517][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 85. Learner queue size: 0. Other stats: (train_seconds = 20.0)
+[2023-10-28 12:55:11,519][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 131. Learner queue size: 0. Other stats: (train_seconds = 25.0)
+[2023-10-28 12:55:16,524][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 122. Learner queue size: 0. Other stats: (train_seconds = 30.0)
+[2023-10-28 12:55:21,528][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 66. Learner queue size: 0. Other stats: (train_seconds = 35.0)
+[2023-10-28 12:55:26,531][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 141. Learner queue size: 0. Other stats: (train_seconds = 40.0)
+[2023-10-28 12:55:31,535][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 74. Learner queue size: 0. Other stats: (train_seconds = 45.0)
+[2023-10-28 12:55:36,541][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 53. Learner queue size: 0. Other stats: (train_seconds = 50.0)
+[2023-10-28 12:55:41,548][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 132. Learner queue size: 0. Other stats: (train_seconds = 55.1)
+[2023-10-28 12:55:46,552][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 142. Learner queue size: 0. Other stats: (train_seconds = 60.1)
+[2023-10-28 12:55:51,556][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 131. Learner queue size: 0. Other stats: (train_seconds = 65.1)
+[2023-10-28 12:55:56,560][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 85. Learner queue size: 1. Other stats: (train_seconds = 70.1)
+[2023-10-28 12:56:01,563][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 72. Learner queue size: 3. Other stats: (train_seconds = 75.1)
+[2023-10-28 12:56:06,567][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 113. Learner queue size: 3. Other stats: (train_seconds = 80.1)
+[2023-10-28 12:56:11,577][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 108. Learner queue size: 3. Other stats: (train_seconds = 85.1)
+[2023-10-28 12:56:16,584][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 40. Learner queue size: 32. Other stats: (train_seconds = 90.1)
+[2023-10-28 12:56:21,587][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 37. Learner queue size: 32. Other stats: (train_seconds = 95.1)
+[2023-10-28 12:56:26,592][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 26. Learner queue size: 32. Other stats: (train_seconds = 100.1)
+[2023-10-28 12:56:31,596][root][INFO] - Step 0 @ 0.0 SPS. Inference batcher size: 21. Learner queue size: 32. Other stats: (train_seconds = 105.1)
+[2023-10-28 12:56:31,877][palaas/out][INFO] - Updated log fields: ['_tick', '_time', 'train_seconds', 'success_rate', 'meta_entropy', 'hks_loss', 'step', 'mean_episode_return', 'mean_episode_step', 'total_loss', 'entropy_loss', 'pg_loss', 'baseline_loss', 'learner_queue_size']
+[2023-10-28 12:56:36,600][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-54-45/quest_easy_0.tar
+[2023-10-28 12:56:36,657][root][INFO] - Step 2560 @ 511.6 SPS. Inference batcher size: 7. Learner queue size: 32. Other stats: (train_seconds = 110.1, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.66159, step = 2560, mean_episode_return = -0.0056914, mean_episode_step = 17.001, total_loss = -462.66, entropy_loss = -4.1187, pg_loss = -474.6, baseline_loss = 13.902, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 12:56:41,663][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 53. Learner queue size: 32. Other stats: (train_seconds = 115.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.66159, step = 2560, mean_episode_return = -0.0056914, mean_episode_step = 17.001, total_loss = -462.66, entropy_loss = -4.1187, pg_loss = -474.6, baseline_loss = 13.902, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 12:56:46,670][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 120.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.66159, step = 2560, mean_episode_return = -0.0056914, mean_episode_step = 17.001, total_loss = -462.66, entropy_loss = -4.1187, pg_loss = -474.6, baseline_loss = 13.902, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 12:56:51,676][root][INFO] - Step 2560 @ 0.0 SPS. Inference batcher size: 59. Learner queue size: 32. Other stats: (train_seconds = 125.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.66159, step = 2560, mean_episode_return = -0.0056914, mean_episode_step = 17.001, total_loss = -462.66, entropy_loss = -4.1187, pg_loss = -474.6, baseline_loss = 13.902, learner_queue_size = 32, _tick = 0, _time = 1.6985e+09)
+[2023-10-28 12:56:56,681][root][INFO] - Step 5120 @ 511.6 SPS. Inference batcher size: 71. Learner queue size: 32. Other stats: (train_seconds = 130.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 1.334, step = 5120, mean_episode_return = -0.0047143, mean_episode_step = 18.907, total_loss = 1292.4, entropy_loss = -4.0767, pg_loss = 1086.5, baseline_loss = 205.38, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 12:57:01,689][root][INFO] - Step 5120 @ 0.0 SPS. Inference batcher size: 10. Learner queue size: 32. Other stats: (train_seconds = 135.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 1.334, step = 5120, mean_episode_return = -0.0047143, mean_episode_step = 18.907, total_loss = 1292.4, entropy_loss = -4.0767, pg_loss = 1086.5, baseline_loss = 205.38, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 12:57:06,697][root][INFO] - Step 5120 @ 0.0 SPS. Inference batcher size: 21. Learner queue size: 32. Other stats: (train_seconds = 140.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 1.334, step = 5120, mean_episode_return = -0.0047143, mean_episode_step = 18.907, total_loss = 1292.4, entropy_loss = -4.0767, pg_loss = 1086.5, baseline_loss = 205.38, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 12:57:11,705][root][INFO] - Step 5120 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 145.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 1.334, step = 5120, mean_episode_return = -0.0047143, mean_episode_step = 18.907, total_loss = 1292.4, entropy_loss = -4.0767, pg_loss = 1086.5, baseline_loss = 205.38, learner_queue_size = 32, _tick = 1, _time = 1.6985e+09)
+[2023-10-28 12:57:16,710][root][INFO] - Step 7680 @ 511.6 SPS. Inference batcher size: 8. Learner queue size: 32. Other stats: (train_seconds = 150.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.31089, step = 7680, mean_episode_return = -0.0061795, mean_episode_step = 17.736, total_loss = -264.9, entropy_loss = -4.1182, pg_loss = -271.52, baseline_loss = 8.8941, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 12:57:21,724][root][INFO] - Step 7680 @ 0.0 SPS. Inference batcher size: 23. Learner queue size: 32. Other stats: (train_seconds = 155.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.31089, step = 7680, mean_episode_return = -0.0061795, mean_episode_step = 17.736, total_loss = -264.9, entropy_loss = -4.1182, pg_loss = -271.52, baseline_loss = 8.8941, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 12:57:26,728][root][INFO] - Step 7680 @ 0.0 SPS. Inference batcher size: 17. Learner queue size: 32. Other stats: (train_seconds = 160.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.31089, step = 7680, mean_episode_return = -0.0061795, mean_episode_step = 17.736, total_loss = -264.9, entropy_loss = -4.1182, pg_loss = -271.52, baseline_loss = 8.8941, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 12:57:31,733][root][INFO] - Step 7680 @ 0.0 SPS. Inference batcher size: 12. Learner queue size: 32. Other stats: (train_seconds = 165.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.31089, step = 7680, mean_episode_return = -0.0061795, mean_episode_step = 17.736, total_loss = -264.9, entropy_loss = -4.1182, pg_loss = -271.52, baseline_loss = 8.8941, learner_queue_size = 32, _tick = 2, _time = 1.6985e+09)
+[2023-10-28 12:57:36,743][root][INFO] - Step 10240 @ 511.1 SPS. Inference batcher size: 3. Learner queue size: 32. Other stats: (train_seconds = 170.2, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.68245, step = 10240, mean_episode_return = -0.0051944, mean_episode_step = 19.294, total_loss = 62.447, entropy_loss = -4.094, pg_loss = 57.074, baseline_loss = 6.8669, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 12:57:41,749][root][INFO] - Step 10240 @ 0.0 SPS. Inference batcher size: 18. Learner queue size: 32. Other stats: (train_seconds = 175.3, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.68245, step = 10240, mean_episode_return = -0.0051944, mean_episode_step = 19.294, total_loss = 62.447, entropy_loss = -4.094, pg_loss = 57.074, baseline_loss = 6.8669, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 12:57:46,754][root][INFO] - Step 10240 @ 0.0 SPS. Inference batcher size: 6. Learner queue size: 32. Other stats: (train_seconds = 180.3, success_rate = 0.0, meta_entropy = tensor(1.3852), hks_loss = 0.68245, step = 10240, mean_episode_return = -0.0051944, mean_episode_step = 19.294, total_loss = 62.447, entropy_loss = -4.094, pg_loss = 57.074, baseline_loss = 6.8669, learner_queue_size = 32, _tick = 3, _time = 1.6985e+09)
+[2023-10-28 12:57:48,104][root][INFO] - Saving checkpoint to /workspace/outputs/2023-10-28/12-54-45/quest_easy.tar
+[2023-10-28 12:57:48,467][root][ERROR] - Exception in actorpool thread!

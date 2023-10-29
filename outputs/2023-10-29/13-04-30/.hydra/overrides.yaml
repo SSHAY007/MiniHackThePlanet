@@ -1,0 +1,3 @@
+- model=hks
+- env=mini_simple_seq
+- total_steps=1e3

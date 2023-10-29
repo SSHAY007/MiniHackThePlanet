@@ -1,0 +1,4 @@
+- model=baseline
+- env=mini_skill_wield
+- use_lstm=false
+- total_steps=1e3
