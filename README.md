@@ -56,7 +56,16 @@ This repo is a very intertwined collections of classes. The driving "main" class
 ```skill_transfer_env.py ``` 
 
 The batching and queuing functions are handles using torchbeast. 
-Torchbeast is a Distributed Scalable Learner and Actor framework that handles the backbone of training.  
+Torchbeast is a Distributed Scalable Learner and Actor framework that handles the backbone of training. Torchbeast uses 
+```skill_transfer_env.py ``` to to create the environments. These environments are vectorized by having a class that 
+reconciles in ```agent/common/envs/tasks.py ```. Once the environment sever is started the actors can connect to it and start the
+rollouts for each actor. 
+
+The models are all parents of a base ```MiniHackAgent```. The base models inherit this class. Then ```HKS,baseline,foc``` are all child
+classes and build upon the base class.
+
+Once the options are trained the hierarchical models finds them using a ```tasks.json```. This allows as to add any skill as a subtask. Then these
+models looks at the paths for the pretrained skills. 
 
 
 
