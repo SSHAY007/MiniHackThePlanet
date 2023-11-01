@@ -61,13 +61,16 @@ Torchbeast is a Distributed Scalable Learner and Actor framework that handles th
 reconciles in ```agent/common/envs/tasks.py ```. Once the environment sever is started the actors can connect to it and start the
 rollouts for each actor. 
 
+```actor.run()``` actually performs the rollouts using the Batching queue and inference queue. In the ```skill_transfer_learner.py ``` holds all the HKS , FOC
+and baseline loss. The actual loss calculates are in ```agent/polybeast/models/losses.py```.
+
 The models are all parents of a base ```MiniHackAgent```. The base models inherit this class. Then ```HKS,baseline,foc``` are all child
 classes and build upon the base class.
 
 Once the options are trained the hierarchical models finds them using a ```tasks.json```. This allows as to add any skill as a subtask. Then these
 models looks at the paths for the pretrained skills. 
 
-
+Anything after is the original repo which is from UCL Skillhack repository.
 
 <h1> SkillHack </h1>
 
